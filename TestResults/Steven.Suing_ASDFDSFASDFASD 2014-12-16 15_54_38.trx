@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4ea3e8b6-8bce-4683-96ec-386b64659f7b" name="Steven.Suing@ASDFDSFASDFASD 2014-12-16 15:54:38" runUser="ASDFDSFASDFASD\Steven.Suing" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="51479641-3046-4a7e-bac6-0cc9ebe85d5a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Steven.Suing_ASDFDSFASDFASD 2014-12-16 15_54_38" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2014-12-16T15:54:38.4039411+00:00" queuing="2014-12-16T15:54:38.7164243+00:00" start="2014-12-16T15:54:38.7945487+00:00" finish="2014-12-16T15:54:49.8599691+00:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <WebTest name="RetrieveAccountByPoolicyNUmber" storage="c:\users\steven.suing\documents\visual studio 2013\projects\demodcproject\demodcproject.performance\retrieveaccountbypoolicynumber.webtest" id="51ae7fda-d38e-43c5-8299-cf5de0f19c6d" persistedWebTest="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pg0KPFdlYlRlc3QgTmFtZT0iUmV0cmlldmVBY2NvdW50QnlQb29saWN5TlVtYmVyIiBJZD0iNTFhZTdmZGEtZDM4ZS00M2M1LTgyOTktY2Y1ZGUwZjE5YzZkIiBPd25lcj0iIiBQcmlvcml0eT0iMjE0NzQ4MzY0NyIgRW5hYmxlZD0iVHJ1ZSIgQ3NzUHJvamVjdFN0cnVjdHVyZT0iIiBDc3NJdGVyYXRpb249IiIgVGltZW91dD0iMCIgV29ya0l0ZW1JZHM9IiIgeG1sbnM9Imh0dHA6Ly9taWNyb3NvZnQuY29tL3NjaGVtYXMvVmlzdWFsU3R1ZGlvL1RlYW1UZXN0LzIwMTAiIERlc2NyaXB0aW9uPSIiIENyZWRlbnRpYWxVc2VyTmFtZT0iIiBDcmVkZW50aWFsUGFzc3dvcmQ9IiIgUHJlQXV0aGVudGljYXRlPSJUcnVlIiBQcm94eT0iZGVmYXVsdCIgU3RvcE9uRXJyb3I9IkZhbHNlIiBSZWNvcmRlZFJlc3VsdEZpbGU9IiIgUmVzdWx0c0xvY2FsZT0iIj4NCiAgPEl0ZW1zPg0KICAgIDxSZXF1ZXN0IE1ldGhvZD0iR0VUIiBHdWlkPSI1YTJiYzhmYi04MjRlLTQ3MDYtYjg2ZC00NDU1MmZmZWM5MjciIFZlcnNpb249IjEuMSIgVXJsPSJodHRwOi8vaW5zdXJhbmNlY29iaWxsaW5nLmF6dXJld2Vic2l0ZXMubmV0L2FwaS9hY2NvdW50c2VhcmNoIiBUaGlua1RpbWU9IjAiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlcnM+DQogICAgICAgIDxRdWVyeVN0cmluZ1BhcmFtZXRlciBOYW1lPSJQb2xpY3lOdW1iZXIiIFZhbHVlPSIwMDAwMDUiIFJlY29yZGVkVmFsdWU9IiIgQ29ycmVsYXRpb25CaW5kaW5nPSIiIFVybEVuY29kZT0iVHJ1ZSIgVXNlVG9Hcm91cFJlc3VsdHM9IkZhbHNlIiAvPg0KICAgICAgPC9RdWVyeVN0cmluZ1BhcmFtZXRlcnM+DQogICAgPC9SZXF1ZXN0Pg0KICA8L0l0ZW1zPg0KPC9XZWJUZXN0Pg==">
+      <Execution id="d55fe45e-c759-466b-ac71-dec7177a1869" />
+    </WebTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry isTransparent="false" testId="51ae7fda-d38e-43c5-8299-cf5de0f19c6d" executionId="d55fe45e-c759-466b-ac71-dec7177a1869" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <WebTestResult executionId="d55fe45e-c759-466b-ac71-dec7177a1869" testId="51ae7fda-d38e-43c5-8299-cf5de0f19c6d" testName="RetrieveAccountByPoolicyNUmber" computerName="ASDFDSFASDFASD" duration="00:00:00.3436364" startTime="2014-12-16T15:54:38.8726794+00:00" endTime="2014-12-16T15:54:49.8287173+00:00" testType="4e7599fa-5ecb-43e9-a887-cd63cf72d207" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d55fe45e-c759-466b-ac71-dec7177a1869">
+      <ResultFiles>
+        <ResultFile path="RetrieveAccountByPoolicyNUmber.webtestResult" />
+      </ResultFiles>
+      <TestSettings name="Local" id="51479641-3046-4a7e-bac6-0cc9ebe85d5a">
+        <Description>These are default test settings for a local test run.</Description>
+        <Execution>
+          <TestTypeSpecific>
+            <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+              <Browser name="Internet Explorer 9.0" MaxConnections="6">
+                <Headers>
+                  <Header name="User-Agent" value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)" />
+                  <Header name="Accept" value="*/*" />
+                  <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+                  <Header name="Accept-Encoding" value="GZIP" />
+                </Headers>
+              </Browser>
+            </WebTestRunConfiguration>
+          </TestTypeSpecific>
+          <AgentRule name="Execution Agents">
+          </AgentRule>
+        </Execution>
+        <Deployment runDeploymentRoot="Steven.Suing_ASDFDSFASDFASD 2014-12-16 15_54_38" />
+        <Properties />
+      </TestSettings>
+      <WebTestResultFilePath>Steven.Suing_ASDFDSFASDFASD 2014-12-16 15_54_38\In\d55fe45e-c759-466b-ac71-dec7177a1869\RetrieveAccountByPoolicyNUmber.webtestResult</WebTestResultFilePath>
+    </WebTestResult>
+  </Results>
+</TestRun>

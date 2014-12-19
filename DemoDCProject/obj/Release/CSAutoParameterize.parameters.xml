@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DemoDCProjectContext-Web.config Connection String" description="DemoDCProjectContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localdb)\v11.0; Initial Catalog=DemoDCProjectContext-20141125212049; Integrated Security=True; MultipleActiveResultSets=True; AttachDbFilename=|DataDirectory|DemoDCProjectContext-20141125212049.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Steven\.Suing\\documents\\visual\ studio\ 2013\\Projects\\DemoDCProject\\DemoDCProject\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DemoDCProjectContext']/@connectionString" />
+  </parameter>
+  <parameter name="BillingContext-Web.config Connection String" description="BillingContext Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:gr164xudcp.database.windows.net,1433;Database=ExampleDBDuckCreek;User ID=steven.suing@gr164xudcp;Password=Star11pop;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Steven\.Suing\\documents\\visual\ studio\ 2013\\Projects\\DemoDCProject\\DemoDCProject\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BillingContext']/@connectionString" />
+  </parameter>
+</parameters>

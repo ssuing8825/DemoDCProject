@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="cabf21ec-28fa-4aef-953b-4aa99104094e" name="Steven.Suing@ASDFDSFASDFASD 2014-12-16 18:29:12" runUser="ASDFDSFASDFASD\Steven.Suing" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="51479641-3046-4a7e-bac6-0cc9ebe85d5a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Steven.Suing_ASDFDSFASDFASD 2014-12-16 18_29_12" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2014-12-16T18:29:12.9809470+00:00" queuing="2014-12-16T18:29:13.3069019+00:00" start="2014-12-16T18:29:13.3757375+00:00" finish="2014-12-16T18:29:24.5110542+00:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <WebTest name="CreateCC" storage="c:\users\steven.suing\documents\visual studio 2013\projects\demodcproject\demodcproject.performance\createcc.webtest" id="e7c427d4-3ffd-4ac0-9b42-51b83c509936" persistedWebTest="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pg0KPFdlYlRlc3QgTmFtZT0iQ3JlYXRlQ0MiIElkPSJlN2M0MjdkNC0zZmZkLTRhYzAtOWI0Mi01MWI4M2M1MDk5MzYiIE93bmVyPSIiIFByaW9yaXR5PSIyMTQ3NDgzNjQ3IiBFbmFibGVkPSJUcnVlIiBDc3NQcm9qZWN0U3RydWN0dXJlPSIiIENzc0l0ZXJhdGlvbj0iIiBUaW1lb3V0PSIwIiBXb3JrSXRlbUlkcz0iIiB4bWxucz0iaHR0cDovL21pY3Jvc29mdC5jb20vc2NoZW1hcy9WaXN1YWxTdHVkaW8vVGVhbVRlc3QvMjAxMCIgRGVzY3JpcHRpb249IiIgQ3JlZGVudGlhbFVzZXJOYW1lPSIiIENyZWRlbnRpYWxQYXNzd29yZD0iIiBQcmVBdXRoZW50aWNhdGU9IlRydWUiIFByb3h5PSJkZWZhdWx0IiBTdG9wT25FcnJvcj0iRmFsc2UiIFJlY29yZGVkUmVzdWx0RmlsZT0iIiBSZXN1bHRzTG9jYWxlPSIiPg0KICA8SXRlbXM+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJQT1NUIiBHdWlkPSIzZjgxMDgyOS0wNzM0LTQ1NTAtODhiOC1iODQ2OTIzOWM0YzIiIFZlcnNpb249IjEuMSIgVXJsPSJodHRwOi8vaW5zdXJhbmNlY29iaWxsaW5nLmF6dXJld2Vic2l0ZXMubmV0L0FQSS9DcmVkaXRDYXJkcyIgVGhpbmtUaW1lPSIwIiBUaW1lb3V0PSIzMDAiIFBhcnNlRGVwZW5kZW50UmVxdWVzdHM9IlRydWUiIEZvbGxvd1JlZGlyZWN0cz0iVHJ1ZSIgUmVjb3JkUmVzdWx0PSJUcnVlIiBDYWNoZT0iRmFsc2UiIFJlc3BvbnNlVGltZUdvYWw9IjAiIEVuY29kaW5nPSJ1dGYtOCIgRXhwZWN0ZWRIdHRwU3RhdHVzQ29kZT0iMCIgRXhwZWN0ZWRSZXNwb25zZVVybD0iIiBSZXBvcnRpbmdOYW1lPSIiIElnbm9yZUh0dHBTdGF0dXNDb2RlPSJGYWxzZSI+DQogICAgICA8U3RyaW5nSHR0cEJvZHkgQ29udGVudFR5cGU9ImFwcGxpY2F0aW9uL2pzb24iIEluc2VydEJ5dGVPcmRlck1hcms9IkZhbHNlIj5ld0FOQUFvQUlBQWdBQ0FBSUFBaUFFTUFjZ0JsQUdRQWFRQjBBRU1BWVFCeUFHUUFUZ0IxQUcwQVlnQmxBSElBSWdBNkFDQUFJZ0J6QUdFQWJRQndBR3dBWlFBZ0FITUFkQUJ5QUdrQWJnQm5BQ0FBTVFBaUFDd0FEUUFLQUNBQUlBQWdBQ0FBSWdCV0FHVUFjZ0JwQUdZQWFRQmpBR0VBZEFCcEFHOEFiZ0JEQUc4QVpBQmxBQ0lBT2dBZ0FDSUFjd0JoQUcwQWNBQnNBR1VBSUFCekFIUUFjZ0JwQUc0QVp3QWdBRElBSWdBc0FBMEFDZ0FnQUNBQUlBQWdBQ0lBUlFCNEFIQUFSQUJoQUhRQVpRQWlBRG9BSUFBaUFITUFZUUJ0QUhBQWJBQmxBQ0FBY3dCMEFISUFhUUJ1QUdjQUlBQXpBQ0lBTEFBTkFBb0FJQUFnQUNBQUlBQWlBRlFBYndCckFHVUFiZ0FpQURvQUlBQWlBSE1BWVFCdEFIQUFiQUJsQUNBQWN3QjBBSElBYVFCdUFHY0FJQUEwQUNJQURRQUtBSDBBPC9TdHJpbmdIdHRwQm9keT4NCiAgICA8L1JlcXVlc3Q+DQogIDwvSXRlbXM+DQo8L1dlYlRlc3Q+">
+      <Execution id="8c5be245-8bd1-4de1-bb05-62ad5e32682a" />
+    </WebTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry isTransparent="false" testId="e7c427d4-3ffd-4ac0-9b42-51b83c509936" executionId="8c5be245-8bd1-4de1-bb05-62ad5e32682a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <WebTestResult executionId="8c5be245-8bd1-4de1-bb05-62ad5e32682a" testId="e7c427d4-3ffd-4ac0-9b42-51b83c509936" testName="CreateCC" computerName="ASDFDSFASDFASD" duration="00:00:00.3970516" startTime="2014-12-16T18:29:13.4851146+00:00" endTime="2014-12-16T18:29:24.4954654+00:00" testType="4e7599fa-5ecb-43e9-a887-cd63cf72d207" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c5be245-8bd1-4de1-bb05-62ad5e32682a">
+      <ResultFiles>
+        <ResultFile path="CreateCC.webtestResult" />
+      </ResultFiles>
+      <TestSettings name="Local" id="51479641-3046-4a7e-bac6-0cc9ebe85d5a">
+        <Description>These are default test settings for a local test run.</Description>
+        <Execution>
+          <TestTypeSpecific>
+            <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+              <Browser name="Internet Explorer 9.0" MaxConnections="6">
+                <Headers>
+                  <Header name="User-Agent" value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)" />
+                  <Header name="Accept" value="*/*" />
+                  <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+                  <Header name="Accept-Encoding" value="GZIP" />
+                </Headers>
+              </Browser>
+            </WebTestRunConfiguration>
+          </TestTypeSpecific>
+          <AgentRule name="Execution Agents">
+          </AgentRule>
+        </Execution>
+        <Deployment runDeploymentRoot="Steven.Suing_ASDFDSFASDFASD 2014-12-16 18_29_12" />
+        <Properties />
+      </TestSettings>
+      <WebTestResultFilePath>Steven.Suing_ASDFDSFASDFASD 2014-12-16 18_29_12\In\8c5be245-8bd1-4de1-bb05-62ad5e32682a\CreateCC.webtestResult</WebTestResultFilePath>
+    </WebTestResult>
+  </Results>
+</TestRun>

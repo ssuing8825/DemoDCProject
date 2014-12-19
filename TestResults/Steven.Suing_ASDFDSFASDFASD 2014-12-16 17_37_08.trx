@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9090bceb-be52-4e32-b4aa-966b157bab44" name="Steven.Suing@ASDFDSFASDFASD 2014-12-16 17:37:08" runUser="ASDFDSFASDFASD\Steven.Suing" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="51479641-3046-4a7e-bac6-0cc9ebe85d5a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Steven.Suing_ASDFDSFASDFASD 2014-12-16 17_37_08" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2014-12-16T17:37:08.1602711+00:00" queuing="2014-12-16T17:37:08.4565633+00:00" start="2014-12-16T17:37:08.5346883+00:00" finish="2014-12-16T17:37:19.8328940+00:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <WebTest name="DuckCreekDirectAccountSearch" storage="c:\users\steven.suing\documents\visual studio 2013\projects\demodcproject\demodcproject.performance\duckcreekdirectaccountsearch.webtest" id="d7177a6e-3ced-48b0-be85-0978fc603ddf" persistedWebTest="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pg0KPFdlYlRlc3QgTmFtZT0iRHVja0NyZWVrRGlyZWN0QWNjb3VudFNlYXJjaCIgSWQ9ImQ3MTc3YTZlLTNjZWQtNDhiMC1iZTg1LTA5NzhmYzYwM2RkZiIgT3duZXI9IiIgUHJpb3JpdHk9IjIxNDc0ODM2NDciIEVuYWJsZWQ9IlRydWUiIENzc1Byb2plY3RTdHJ1Y3R1cmU9IiIgQ3NzSXRlcmF0aW9uPSIiIFRpbWVvdXQ9IjAiIFdvcmtJdGVtSWRzPSIiIHhtbG5zPSJodHRwOi8vbWljcm9zb2Z0LmNvbS9zY2hlbWFzL1Zpc3VhbFN0dWRpby9UZWFtVGVzdC8yMDEwIiBEZXNjcmlwdGlvbj0iIiBDcmVkZW50aWFsVXNlck5hbWU9IiIgQ3JlZGVudGlhbFBhc3N3b3JkPSIiIFByZUF1dGhlbnRpY2F0ZT0iVHJ1ZSIgUHJveHk9ImRlZmF1bHQiIFN0b3BPbkVycm9yPSJGYWxzZSIgUmVjb3JkZWRSZXN1bHRGaWxlPSIiIFJlc3VsdHNMb2NhbGU9IiI+DQogIDxJdGVtcz4NCiAgICA8UmVxdWVzdCBNZXRob2Q9IlBPU1QiIEd1aWQ9ImRlZjQ2YTA2LTgyYjMtNGMyZC1hZWRmLTEwYjE2N2I3YmU3ZSIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHA6Ly9hc2RmZHNmYXNkZmFzZC5jbG91ZGFwcC5uZXQ6ODA4MC9EdWNrQ3JlZWsvRENUU2VydmVyLmFzcHgiIFRoaW5rVGltZT0iMCIgVGltZW91dD0iMzAwIiBQYXJzZURlcGVuZGVudFJlcXVlc3RzPSJUcnVlIiBGb2xsb3dSZWRpcmVjdHM9IlRydWUiIFJlY29yZFJlc3VsdD0iVHJ1ZSIgQ2FjaGU9IkZhbHNlIiBSZXNwb25zZVRpbWVHb2FsPSIwIiBFbmNvZGluZz0idXRmLTgiIEV4cGVjdGVkSHR0cFN0YXR1c0NvZGU9IjAiIEV4cGVjdGVkUmVzcG9uc2VVcmw9IiIgUmVwb3J0aW5nTmFtZT0iIiBJZ25vcmVIdHRwU3RhdHVzQ29kZT0iRmFsc2UiPg0KICAgICAgPFN0cmluZ0h0dHBCb2R5IENvbnRlbnRUeXBlPSJ0ZXh0L3htbCIgSW5zZXJ0Qnl0ZU9yZGVyTWFyaz0iRmFsc2UiPlBBQnpBR1VBY2dCMkFHVUFjZ0ErQUEwQUNnQWdBQ0FBSUFBOEFISUFaUUJ4QUhVQVpRQnpBSFFBY3dBK0FBMEFDZ0FnQUNBQUlBQWdBQ0FBSUFBOEFGTUFaUUJ6QUhNQWFRQnZBRzRBTGdCc0FHOEFad0JwQUc0QVVnQnhBQ0FBZFFCekFHVUFjZ0JPQUdFQWJRQmxBRDBBSWdCaEFHUUFiUUJwQUc0QUlnQWdBSEFBWVFCekFITUFkd0J2QUhJQVpBQTlBQ0lBWVFCa0FHMEFhUUJ1QUNJQUlBQXZBRDRBRFFBS0FDQUFJQUFnQUNBQUlBQWdBQ0FBUEFCUEFHNEFiQUJwQUc0QVpRQkVBR0VBZEFCaEFDNEFad0JsQUhRQVZRQnpBR1VBY2dCRUFHVUFkQUJoQUdrQWJBQnpBRklBY1FBZ0FIVUFjd0JsQUhJQVRnQmhBRzBBWlFBOUFDSUFZUUJrQUcwQWFRQnVBQ0lBSUFBdkFENEFEUUFLQUNBQUlBQWdBQ0FBSUFBOEFFSUFhUUJzQUd3QWFRQnVBR2NBVHdCaUFHb0FMZ0JuQUdVQWRBQkJBR01BWXdCdkFIVUFiZ0IwQUZNQWRRQnRBRzBBWVFCeUFIa0FVZ0J4QUQ0QURRQUtBQ0FBSUFBZ0FEd0FRUUJqQUdNQWJ3QjFBRzRBZEFCSkFHUUFQZ0F4QURBQU1BQXdBRE1BUEFBdkFFRUFZd0JqQUc4QWRRQnVBSFFBU1FCa0FENEFEUUFLQUNBQUlBQWdBRHdBVkFCeUFHRUFiZ0J6QUdFQVl3QjBBR2tBYndCdUFFUUFZUUIwQUdVQVBnQXlBREFBTVFBMEFDMEFNUUF4QUMwQU1nQTFBRlFBTUFBd0FEb0FNQUF3QURvQU1BQXdBRm9BUEFBdkFGUUFjZ0JoQUc0QWN3QmhBR01BZEFCcEFHOEFiZ0JFQUdFQWRBQmxBRDRBRFFBS0FDQUFQQUF2QUVJQWFRQnNBR3dBYVFCdUFHY0FUd0JpQUdvQUxnQm5BR1VBZEFCQkFHTUFZd0J2QUhVQWJnQjBBRk1BZFFCdEFHMEFZUUJ5QUhrQVVnQnhBRDRBRFFBS0FDQUFJQUFnQUNBQUlBQWdBRHdBVXdCbEFITUFjd0JwQUc4QWJnQXVBR01BYkFCdkFITUFaUUJTQUhFQUlBQXZBRDRBRFFBS0FDQUFJQUFnQUR3QUx3QnlBR1VBY1FCMUFHVUFjd0IwQUhNQVBnQU5BQW9BUEFBdkFITUFaUUJ5QUhZQVpRQnlBRDRBPC9TdHJpbmdIdHRwQm9keT4NCiAgICA8L1JlcXVlc3Q+DQogIDwvSXRlbXM+DQo8L1dlYlRlc3Q+">
+      <Execution id="93555518-2936-4564-9b51-7e85e432a7f3" />
+    </WebTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry isTransparent="false" testId="d7177a6e-3ced-48b0-be85-0978fc603ddf" executionId="93555518-2936-4564-9b51-7e85e432a7f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <WebTestResult executionId="93555518-2936-4564-9b51-7e85e432a7f3" testId="d7177a6e-3ced-48b0-be85-0978fc603ddf" testName="DuckCreekDirectAccountSearch" computerName="ASDFDSFASDFASD" duration="00:00:00.5727596" startTime="2014-12-16T17:37:08.6128157+00:00" endTime="2014-12-16T17:37:19.8016302+00:00" testType="4e7599fa-5ecb-43e9-a887-cd63cf72d207" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93555518-2936-4564-9b51-7e85e432a7f3">
+      <ResultFiles>
+        <ResultFile path="DuckCreekDirectAccountSearch.webtestResult" />
+      </ResultFiles>
+      <TestSettings name="Local" id="51479641-3046-4a7e-bac6-0cc9ebe85d5a">
+        <Description>These are default test settings for a local test run.</Description>
+        <Execution>
+          <TestTypeSpecific>
+            <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+              <Browser name="Internet Explorer 9.0" MaxConnections="6">
+                <Headers>
+                  <Header name="User-Agent" value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)" />
+                  <Header name="Accept" value="*/*" />
+                  <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+                  <Header name="Accept-Encoding" value="GZIP" />
+                </Headers>
+              </Browser>
+            </WebTestRunConfiguration>
+          </TestTypeSpecific>
+          <AgentRule name="Execution Agents">
+          </AgentRule>
+        </Execution>
+        <Deployment runDeploymentRoot="Steven.Suing_ASDFDSFASDFASD 2014-12-16 17_37_08" />
+        <Properties />
+      </TestSettings>
+      <WebTestResultFilePath>Steven.Suing_ASDFDSFASDFASD 2014-12-16 17_37_08\In\93555518-2936-4564-9b51-7e85e432a7f3\DuckCreekDirectAccountSearch.webtestResult</WebTestResultFilePath>
+    </WebTestResult>
+  </Results>
+</TestRun>
