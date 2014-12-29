@@ -4,13 +4,14 @@
 -- Description:	<Description,,>
 -- =============================================
 CREATE PROCEDURE dbo.CreateToken
+@BillingAccountId INT,
 @Pec varchar(50),
 @TokenNumber varchar(50)
 AS
 	SET NOCOUNT ON
 
 	INSERT	INTO dbo.Token
-			(Pec, TokenNumber)
-	VALUES	(@Pec, @TokenNumber)
+			(BillingAccountId, Pec, TokenNumber)
+	VALUES	(@BillingAccountId, @Pec, @TokenNumber)
 
 	RETURN SCOPE_IDENTITY()

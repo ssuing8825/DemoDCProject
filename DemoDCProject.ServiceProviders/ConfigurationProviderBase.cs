@@ -8,6 +8,29 @@ namespace DemoDCProject.ServiceProviders
 {
     internal abstract class ConfigurationProviderBase
     {
+
+        /// <summary>
+        /// This is the paymenttech url
+        /// </summary>
+        public string PaymentechUrl
+        {
+            get
+            {
+                return GetConfigurationSettingValue("Endpoint:PaymenttechUrl");
+            }
+        }
+
+        /// <summary>
+        /// This is the duck creek url 
+        /// </summary>
+        public string DuckCreekUrl
+        {
+            get
+            {
+                return GetConfigurationSettingValue("Endpoint:DuckCreekUrl");
+            }
+        }
+
         /// <summary>
         /// This method returns an instance of <see cref="ConnectionInformation"/> that is extracted from either
         /// the connectionStrings section of a config file or some other location.

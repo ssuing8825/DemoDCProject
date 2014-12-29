@@ -1,0 +1,12 @@
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.IntegrationTests\obj\Debug\DemoDCProject.IntegrationTests.csprojResolveAssemblyReference.cache
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.IntegrationTests\bin\Debug\DemoDCProject.IntegrationTests.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.IntegrationTests\bin\Debug\DemoDCProject.IntegrationTests.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.IntegrationTests\bin\Debug\DemoDCProject.DomainLayer.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.IntegrationTests\bin\Debug\DemoDCProject.ServiceProviders.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.IntegrationTests\bin\Debug\DemoDCProject.Testing.Shared.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.IntegrationTests\bin\Debug\DemoDCProject.DomainLayer.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.IntegrationTests\bin\Debug\DemoDCProject.ServiceProviders.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.IntegrationTests\bin\Debug\DemoDCProject.Testing.Shared.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.IntegrationTests\obj\Debug\DemoDCProject.IntegrationTests.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.IntegrationTests\obj\Debug\DemoDCProject.IntegrationTests.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.IntegrationTests\bin\Debug\DemoDCProject.IntegrationTests.dll.config

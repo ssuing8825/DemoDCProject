@@ -67,4 +67,7 @@
     <Build Include="dbo\Stored Procedures\CreateToken.sql" />
     <Build Include="dbo\Tables\Token.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="DemoDCProjectDB.publish.xml" />
+  </ItemGroup>
 </Project>

@@ -33,7 +33,7 @@ namespace DemoDCProject.IntegrationTests
             // Nothing to arrange here. We might set up an account or prep the database
 
             // Act
-            var token = domainFacadeUnderTest.GenerateTokenAndStoreCreditCardInformation(CREDITCARD, EXPDATE);
+            var token = domainFacadeUnderTest.GenerateTokenAndStoreCreditCardInformation(1, CREDITCARD, EXPDATE);
 
             // Assert
             Assert.AreEqual(1, testMediator.MakePaymentVerificationNumberCountOfPaymentsSent);
@@ -49,7 +49,7 @@ namespace DemoDCProject.IntegrationTests
         public void CreateToken_WithBlankCreditCard_ShouldThrow()
         {
             // Act
-            var token = domainFacadeUnderTest.GenerateTokenAndStoreCreditCardInformation(string.Empty, EXPDATE);
+            var token = domainFacadeUnderTest.GenerateTokenAndStoreCreditCardInformation(1, string.Empty, EXPDATE);
         }
 
         [TestMethod]
@@ -58,7 +58,7 @@ namespace DemoDCProject.IntegrationTests
         public void CreateToken_WithNullCreditCard_ShouldThrow()
         {
             // Act
-            var token = domainFacadeUnderTest.GenerateTokenAndStoreCreditCardInformation(null, EXPDATE);
+            var token = domainFacadeUnderTest.GenerateTokenAndStoreCreditCardInformation(1, null, EXPDATE);
         }
 
         [TestMethod]
@@ -67,7 +67,7 @@ namespace DemoDCProject.IntegrationTests
         public void CreateToken_WithNullExpDate_ShouldThrow()
         {
             // Act
-            var token = domainFacadeUnderTest.GenerateTokenAndStoreCreditCardInformation(CREDITCARD, null);
+            var token = domainFacadeUnderTest.GenerateTokenAndStoreCreditCardInformation(1, CREDITCARD, null);
         }
 
     }

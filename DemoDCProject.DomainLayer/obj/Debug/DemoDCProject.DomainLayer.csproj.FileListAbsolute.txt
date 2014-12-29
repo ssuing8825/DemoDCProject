@@ -1,0 +1,11 @@
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\obj\Debug\DemoDCProject.DomainLayer.csprojResolveAssemblyReference.cache
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\bin\Debug\DemoDCProject.DomainLayer.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\bin\Debug\DemoDCProject.DomainLayer.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\bin\Debug\DemoDCProject.ServiceProviders.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\bin\Debug\DemoDCProject.ServiceProviders.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\obj\Debug\DemoDCProject.DomainLayer.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\obj\Debug\DemoDCProject.DomainLayer.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\bin\Debug\System.Net.Http.Formatting.xml
