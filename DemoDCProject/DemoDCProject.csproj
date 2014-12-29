@@ -242,7 +242,12 @@
     <Content Include="Views\Policy\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DemoDCProject.Core\DemoDCProject.Core.csproj">
+      <Project>{51f7bf91-951a-48f1-ab94-5193d37b937d}</Project>
+      <Name>DemoDCProject.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Project_Readme.html" />
   </ItemGroup>
