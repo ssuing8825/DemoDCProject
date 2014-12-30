@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Doubles\Fakes\BillingGatewayFake.cs" />
+    <Compile Include="Doubles\Fakes\ServiceProviders\ConfigurationProviderFake.cs" />
     <Compile Include="Doubles\Spies\PaymentGatewaySpy.cs" />
     <Compile Include="Doubles\Fakes\Services\RuntimeEnvironmentIsolationServiceFake.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

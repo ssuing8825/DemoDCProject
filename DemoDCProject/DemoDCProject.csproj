@@ -247,6 +247,10 @@
       <Project>{51f7bf91-951a-48f1-ab94-5193d37b937d}</Project>
       <Name>DemoDCProject.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DemoDCProject.DomainLayer\DemoDCProject.DomainLayer.csproj">
+      <Project>{1c40913f-fc1d-459d-9749-ab74b8932ca5}</Project>
+      <Name>DemoDCProject.DomainLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Project_Readme.html" />

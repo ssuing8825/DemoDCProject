@@ -13,11 +13,33 @@ namespace DemoDCProject.DomainLayer.Managers.Gateways.Billing
                           <Session.loginRq userName='admin' password='admin' />
                            <BillingObj.getAccountSummaryRq>
                                    <AccountId>{0}</AccountId>
-                                   <TransactionDate>{1}</TransactionDate>
                                     </BillingObj.getAccountSummaryRq>
                           <Session.closeRq />
                       </requests>
                     </server>";
+
+        private const string SEARCH_BY_ACCOUNT_REFERENCE_ID = @"<server>
+                       <requests>
+                        <Session.loginRq userName='admin' password='admin' />
+                        <BillAccount.searchByAccountReferenceRq>
+                               <SearchRequestRecord>
+                                  <SearchCriteria>
+                                     <AccountSearchRecord>
+                                        <AccountReference>{0}</AccountReference>
+                                     </AccountSearchRecord>
+                                  </SearchCriteria>
+                                  <SearchControl>
+                                     <Paging>
+                                        <ListStart>1</ListStart>
+                                        <ListLength>100</ListLength>
+                                     </Paging>
+                                  </SearchControl>
+                               </SearchRequestRecord>
+                            </BillAccount.searchByAccountReferenceRq>
+                          <Session.closeRq />
+                      </requests>
+                    </server>";
+
 
 
         //        public static XElement SearchByPolicyReferenceRequest()
@@ -47,10 +69,15 @@ namespace DemoDCProject.DomainLayer.Managers.Gateways.Billing
         //                    </server>");
         //        }
 
-        public static string GetAccountSummaryRequest(int accountId, DateTime transactionDate)
+        public static string GetAccountSummaryRequest(int accountId)
         {
             //if you need to do massive manipulation you can use an XElement.
-            return string.Format(GET_ACCOUNT_SUMMARY_REQUEST, accountId.ToString(), transactionDate.ToShortDateString());
+            return string.Format(GET_ACCOUNT_SUMMARY_REQUEST, accountId);
+        }
+        public static string SearchForAccountByPolicyId(string policyId)
+        {
+            //if you need to do massive manipulation you can use an XElement.
+            return string.Format(SEARCH_BY_ACCOUNT_REFERENCE_ID, policyId);
         }
     }
 }

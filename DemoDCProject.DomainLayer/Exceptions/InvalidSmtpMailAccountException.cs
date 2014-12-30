@@ -1,12 +1,15 @@
 ﻿using DemoDCProject.DomainLayer.Exceptions;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 
 namespace DemoDCProject.DomainLayer.Gateways.Payment
 {
+    [ExcludeFromCodeCoverage]
+    [Serializable]
     public class InvalidTokenInfomationException : DemoDCProjectBaseException
     {
         public InvalidTokenInfomationException() { }

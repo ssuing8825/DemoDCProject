@@ -36,6 +36,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -50,10 +52,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DemoDCProject.DomainLayer\Models\BillingAccountSummaryTests.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DemoDCProject.DomainLayer\DemoDCProject.DomainLayer.csproj">
+      <Project>{1c40913f-fc1d-459d-9749-ab74b8932ca5}</Project>
+      <Name>DemoDCProject.DomainLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DemoDCProject.Testing.Shared\DemoDCProject.Testing.Shared.csproj">
       <Project>{363798f5-7b84-4532-841f-63ffd154a36f}</Project>
       <Name>DemoDCProject.Testing.Shared</Name>
@@ -63,6 +70,9 @@
     <Folder Include="DemoDCProject.DomainLayer\Managers\Factories\" />
     <Folder Include="DemoDCProject.DomainLayer\Managers\Helpers\" />
     <Folder Include="ForTest\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

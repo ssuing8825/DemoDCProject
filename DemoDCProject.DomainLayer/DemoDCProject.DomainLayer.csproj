@@ -61,12 +61,14 @@
     <Compile Include="DomainFacade_PayPlan.cs" />
     <Compile Include="Exceptions\InvalidSmtpMailAccountException.cs" />
     <Compile Include="Extensions\DisposableExtensions.cs" />
+    <Compile Include="Exceptions\BillingAccountNotFoundException.cs" />
     <Compile Include="Managers\Gateways\Billing\DuckCreekBillingGateway.cs" />
     <Compile Include="Managers\Gateways\Billing\BillingGatewayBase.cs" />
     <Compile Include="Managers\Gateways\Billing\DuckCreekServiceCallFactory.cs" />
     <Compile Include="Managers\Gateways\Payment\PaymentGatewayBase.cs" />
     <Compile Include="Managers\Gateways\Payment\PaymentTechPaymentGateway.cs" />
     <Compile Include="Managers\Helpers\TokenGenerator.cs" />
+    <Compile Include="Managers\BillingAccountManager.cs" />
     <Compile Include="Models\Domain\Token.cs" />
     <Compile Include="Models\Public\AuthenticatedPaymentInformation.cs" />
     <Compile Include="Exceptions\CreditCardPaymentInformationException.cs" />
@@ -77,6 +79,8 @@
     <Compile Include="Exceptions\ServiceLocatorConfigurationInvalidException.cs" />
     <Compile Include="Managers\PaymentManager.cs" />
     <Compile Include="Managers\Helpers\Validators\CreditCardPaymentValidator.cs" />
+    <Compile Include="Models\Public\AccountSearchResult.cs" />
+    <Compile Include="Models\Public\BillingAccountSummary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceLocator\ServiceLocatorBase.cs" />
     <Compile Include="ServiceLocator\ServiceLocatorProduction.cs" />
