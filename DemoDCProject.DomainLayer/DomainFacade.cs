@@ -17,7 +17,11 @@ namespace DemoDCProject.DomainLayer
 
         private PaymentManager paymentManager;
         private PaymentManager PaymentManager { get { return paymentManager ?? (paymentManager = serviceLocator.CreatePaymentManager()); } }
+
+        private BillingAccountManager billingAccountManager;
+        private BillingAccountManager BillingAccountManager { get { return billingAccountManager ?? (billingAccountManager = serviceLocator.CreateBillingAccountManager()); } }
  
+
         [ExcludeFromCodeCoverage]
         public DomainFacade(IRuntimeEnvironmentIsolationService runtimeEnvironmentIsolationService)
             : this(ServiceLocatorResolver.Resolve(), runtimeEnvironmentIsolationService)

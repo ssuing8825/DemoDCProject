@@ -32,8 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.7\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -57,11 +58,13 @@
     <Compile Include="DataLayer\DataManagers\TokenDataManagerBase.cs" />
     <Compile Include="DataLayer\Extensions\DbCommandExtensions.cs" />
     <Compile Include="DomainFacade.cs" />
+    <Compile Include="DomainFacade_BillingAccount.cs" />
     <Compile Include="DomainFacade_Payments.cs" />
     <Compile Include="DomainFacade_PayPlan.cs" />
+    <Compile Include="Exceptions\BillingAccountNotFoundException.cs" />
     <Compile Include="Exceptions\InvalidSmtpMailAccountException.cs" />
     <Compile Include="Extensions\DisposableExtensions.cs" />
-    <Compile Include="Exceptions\BillingAccountNotFoundException.cs" />
+    <Compile Include="Exceptions\NotFoundExceptionBase.cs" />
     <Compile Include="Managers\Gateways\Billing\DuckCreekBillingGateway.cs" />
     <Compile Include="Managers\Gateways\Billing\BillingGatewayBase.cs" />
     <Compile Include="Managers\Gateways\Billing\DuckCreekServiceCallFactory.cs" />

@@ -6,12 +6,12 @@ namespace DemoDCProject.DomainLayer.Exceptions
 {
     [ExcludeFromCodeCoverage]
     [Serializable]
-    class BillingAccountNotFoundException : DemoDCProjectBusinessException
+   public class BillingAccountNotFoundException : NotFoundException
     {
         public BillingAccountNotFoundException() { }
         public BillingAccountNotFoundException(string message) : base(message) { }
         public BillingAccountNotFoundException(string message, Exception inner) : base(message, inner) { }
-        private BillingAccountNotFoundException(SerializationInfo info, StreamingContext context)
+        protected BillingAccountNotFoundException(SerializationInfo info, StreamingContext context)
             : base(info, context) { }
     }
 }

@@ -1,11 +1,11 @@
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\bin\Debug\DemoDCProject.UnitTests.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\bin\Debug\DemoDCProject.UnitTests.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\bin\Debug\DemoDCProject.DomainLayer.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\bin\Debug\DemoDCProject.Testing.Shared.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\bin\Debug\DemoDCProject.ServiceProviders.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\bin\Debug\DemoDCProject.DomainLayer.pdb
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\bin\Debug\DemoDCProject.Testing.Shared.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\bin\Debug\DemoDCProject.ServiceProviders.pdb
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\obj\Debug\DemoDCProject.UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\obj\Debug\DemoDCProject.UnitTests.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\obj\Debug\DemoDCProject.UnitTests.pdb
-C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\bin\Debug\DemoDCProject.DomainLayer.dll
-C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\bin\Debug\DemoDCProject.ServiceProviders.dll
-C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\bin\Debug\DemoDCProject.DomainLayer.pdb
-C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.UnitTests\bin\Debug\DemoDCProject.ServiceProviders.pdb

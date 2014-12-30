@@ -55,7 +55,7 @@ namespace DemoDCProject.IntegrationTests.DemoDCProject.DomainLayer.Managers.Gate
         [TestMethod]
         [Priority(-1)]
         [TestCategory("Class Integration Test")]
-        [ExpectedException(typeof(BillingAccountNotFoundException))]
+        [ExpectedException(typeof(NotFoundException))]
         public async Task BillingGateway_RetrieveABillingAccountByPolicyNumber_NotFound()
         {
             //Arrange

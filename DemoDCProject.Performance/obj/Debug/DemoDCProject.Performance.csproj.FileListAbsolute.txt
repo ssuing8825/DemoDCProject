@@ -19,6 +19,6 @@ C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Performance\bin\Deb
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Performance\bin\Debug\LoadTest2.loadtest
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Performance\bin\Debug\DemoDCProject.Performance.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Performance\bin\Debug\DemoDCProject.Performance.pdb
-C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Performance\obj\Debug\DemoDCProject.Performance.csprojResolveAssemblyReference.cache
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Performance\obj\Debug\DemoDCProject.Performance.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Performance\obj\Debug\DemoDCProject.Performance.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Performance\obj\Debug\DemoDCProject.Performance.csprojResolveAssemblyReference.cache

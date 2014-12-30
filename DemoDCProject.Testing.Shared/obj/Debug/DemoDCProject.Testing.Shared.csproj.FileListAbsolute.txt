@@ -1,9 +1,9 @@
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\bin\Debug\DemoDCProject.Testing.Shared.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\bin\Debug\DemoDCProject.Testing.Shared.pdb
-C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\obj\Debug\DemoDCProject.Testing.Shared.csprojResolveAssemblyReference.cache
-C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\obj\Debug\DemoDCProject.Testing.Shared.dll
-C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\obj\Debug\DemoDCProject.Testing.Shared.pdb
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\bin\Debug\DemoDCProject.DomainLayer.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\bin\Debug\DemoDCProject.ServiceProviders.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\bin\Debug\DemoDCProject.DomainLayer.pdb
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\bin\Debug\DemoDCProject.ServiceProviders.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\obj\Debug\DemoDCProject.Testing.Shared.csprojResolveAssemblyReference.cache
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\obj\Debug\DemoDCProject.Testing.Shared.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\obj\Debug\DemoDCProject.Testing.Shared.pdb

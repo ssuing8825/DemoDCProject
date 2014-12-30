@@ -69,5 +69,10 @@ namespace DemoDCProject.DomainLayer.ServiceLocator
         {
             return new DuckCreekBillingGateway(this);
         }
+
+        protected override BillingAccountManager CreateBillingAccountManagerCore()
+        {
+            return new BillingAccountManager(this);
+        }
     }
 }

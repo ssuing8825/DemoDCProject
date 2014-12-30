@@ -23,6 +23,13 @@
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
     <Folder Include="ModelDefinition\" />
+    <Content Include="AccountSearchController_Get.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="AccountSearchController_Get.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>AccountSearchController_Get.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="MakePaymentUseCase.usecasediagram">
       <SubType>Content</SubType>
     </Content>

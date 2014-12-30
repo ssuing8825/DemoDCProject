@@ -71,6 +71,14 @@ namespace DemoDCProject.DomainLayer.ServiceLocator
         protected abstract PaymentManager CreatePaymentManagerCore();
 
 
+        public BillingAccountManager CreateBillingAccountManager()
+        {
+            return CreateBillingAccountManagerCore();
+        }
+        protected abstract BillingAccountManager CreateBillingAccountManagerCore();
+
+
+
         public DataFacade CreateDataFacade()
         {
             return CreateDataFacadeCore();

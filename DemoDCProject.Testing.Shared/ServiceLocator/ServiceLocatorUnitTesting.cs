@@ -97,5 +97,10 @@ namespace DemoDCProject.Testing.Shared.ServiceLocator
         {
             return new DataFacade(this);
         }
+
+        protected override BillingAccountManager CreateBillingAccountManagerCore()
+        {
+            return new BillingAccountManager(this);
+        }
     }
 }

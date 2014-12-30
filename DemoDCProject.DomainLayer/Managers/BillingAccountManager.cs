@@ -24,11 +24,11 @@ namespace DemoDCProject.DomainLayer.Managers
         {
             this.serviceLocator = serviceLocator;
         }
-        public BillingAccountSummary RetrieveBillingAccountForAccountId(int billingAccountId)
+        public async Task<BillingAccountSummary> RetrieveBillingAccountForPolicyId(int policyId)
         {
-
-            return null;
+            return await BillingGateway.RetrieveBillingAccountSummaryByPolicyId(policyId);
         }
+
         public AuthenticatedPaymentInformation AuthenticateCreditCardUsingTokenCore(string nameOnCard, string externalIdentifier, decimal amount, string token, string expirationdate)
         {
             throw new NotImplementedException();

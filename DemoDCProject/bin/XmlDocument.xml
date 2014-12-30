@@ -481,19 +481,114 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
-        <member name="M:DemoDCProject.Controllers.BillingAccountController.Get(System.Int32)">
+        <member name="M:DemoDCProject.Controllers.ApiControllerBase.ConstructHttpResponseException(System.String,System.Exception)">
             <summary>
-            Retrieves a billing account by accountId
+            This method assembles an instance of a HttpResponseException such that the ReasonPhrase is the actual Exception Message
+            and the HTTP Content is the Stack Trace. It also adds an HTTP Header called X-Exception-Type whose value is the fully qualified
+            name of the Type of Exception. This will help calling application rehydrate an exception of the correct type and message.
             </summary>
-            <param name="AccountId">The account number.</param>
+            <param name="exception">An instance of an Exception</param>
+            <returns>An instance of an HttpResponseException</returns>
+        </member>
+        <member name="F:DemoDCProject.WebApplicationVirtualPathProvider.appDomainAppVirtualPath">
+            <summary>
+            This Field provides the Application's Virtual Path.
+            If the Application is Deployed as an IIS Website then this field will return a "/".
+            If the Application is Deployed as an IIS Application (i.e. a sub folder of a Website) then
+            this field will return the Virtual Path ending in a "/"
+            </summary>
+        </member>
+        <member name="F:DemoDCProject.WebApplicationVirtualPathProvider.serverRootFolder">
+            <summary>
+            This Field provides the Full Path to the Physical Folder in which the application is deployed
+            </summary>
+        </member>
+        <member name="F:DemoDCProject.WebApplicationVirtualPathProvider.unInitializedValue">
+            <summary>
+            In this particular useage, we can't use null to determine if
+            properties such as <see cref="P:DemoDCProject.WebApplicationVirtualPathProvider.JavaScriptCdn"/> have been initialized.
+            So we use some arbitary initial value
+            </summary>
+        </member>
+        <member name="F:DemoDCProject.WebApplicationVirtualPathProvider.javaScriptsSubFolder">
+            <summary>
+            This is the "default" folder for JavaScripts.
+            This field makes it possible to Not have to set
+            the "JSCDN" appSetting in the web.config file
+            Unless a real CDN is used.
+            </summary>
+        </member>
+        <member name="F:DemoDCProject.WebApplicationVirtualPathProvider.javaScriptCdn">
+            <summary>
+            Backing field for the <see cref="P:DemoDCProject.WebApplicationVirtualPathProvider.JavaScriptCdn"/> property
+            </summary>
+        </member>
+        <member name="F:DemoDCProject.WebApplicationVirtualPathProvider.imagesSubFolder">
+            <summary>
+            This is the "default" folder for Images.
+            This field makes it possible to Not have to set
+            the "IMGCDN" appSetting in the web.config file
+            Unless a real CDN is used.
+            </summary>
+        </member>
+        <member name="F:DemoDCProject.WebApplicationVirtualPathProvider.imagesCdn">
+            <summary>
+            Backing field for the <see cref="P:DemoDCProject.WebApplicationVirtualPathProvider.ImagesCdn"/> property
+            </summary>
+        </member>
+        <member name="M:DemoDCProject.WebApplicationVirtualPathProvider.ResolveUrl(System.String)">
+            <summary>
+            This method converts or resolves Partial URLs to Relative URLs.
+            if the partialUrl starts with a "~/", then this method will return
+            the Application relative path (starting with the application's root folder if any)
+            Otherwise this method will simply prefix the partialUrl with the <see cref="F:DemoDCProject.WebApplicationVirtualPathProvider.appDomainAppVirtualPath"/> 
+            </summary>
+            <param name="partialUrl">A partial URL that may start with a "~/" to indicate relative to Application Root.</param>
+            <returns>Returns an Application Relative URL relative to the Application's Root</returns>
+        </member>
+        <member name="M:DemoDCProject.WebApplicationVirtualPathProvider.GetWebsiteRootUrl(System.Web.HttpContextBase)">
+            <summary>
+            This method returns the Website's complete URL including the http://. All the way, up to and including the AppDomainAppVirtualPath 
+            </summary>
+            <param name="httpContext"></param>
             <returns></returns>
         </member>
-        <member name="M:DemoDCProject.Controllers.AccountSearchController.Get(System.Int32)">
+        <member name="P:DemoDCProject.WebApplicationVirtualPathProvider.JavaScriptCdn">
             <summary>
-            Does a search by policy number for the accounts connnected to this. 
+            This property Gets the value of the "JSCDN" appSetting if there
+            is one. Otherwise it will return null. The value of "JSCDN" can be
+            a complete URL of the location of the JavaScript files or an
+            Application Relative path such as "~/scripts" 
             </summary>
-            <param name="policyNumber">The policy number.</param>
-            <returns></returns>
+        </member>
+        <member name="P:DemoDCProject.WebApplicationVirtualPathProvider.JavaScriptsPath">
+            <summary>
+            This property Gets the Application Relative Virtual Path
+            to use for JavaScript files. If the "JSCDN" appSetting has
+            been defined in the web.config file (meaning you want to use
+            a CDN to serve JavaScript Files) then it will return that path.
+            The value of "JSCDN" can be the complete URL (CDN) of the location
+            of the JavaScript files or an Application Relative path such as "~/scripts" 
+            </summary>
+        </member>
+        <member name="P:DemoDCProject.WebApplicationVirtualPathProvider.ImagesCdn">
+            <summary>
+            This property Gets the value of the "IMGCDN" appSetting if there
+            is one. Otherwise it will return null. The value of "IMGCDN" can be
+            a complete URL of the location of the Image files or an
+            Application Relative path such as "~/content/images"
+            </summary>
+        </member>
+        <member name="P:DemoDCProject.WebApplicationVirtualPathProvider.ImagesPath">
+            <summary>
+            This property Gets the Application Relative Virtual Path
+            to use for Image files. If the "IMGCDN" appSetting has
+            been defined in the web.config file (meaning you want to use
+            a CDN to serve Images) then it will return that path.
+            The value of "IMGCDN" can be the complete URL (CDN) of the location
+            of the Image files or an Application Relative path such as "~/content/images".
+            
+            </summary>
         </member>
     </members>
 </doc>
