@@ -53,7 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="DemoDCProject.DomainLayer\Models\BillingAccountSummaryTests.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="StaticAnalysis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

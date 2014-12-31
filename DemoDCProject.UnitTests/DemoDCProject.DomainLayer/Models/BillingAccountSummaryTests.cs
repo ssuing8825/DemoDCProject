@@ -263,8 +263,10 @@ namespace DemoDCProject.UnitTests.DemoDCProject.DomainLayer.Models
                                 </server>";
 
         [TestMethod]
+        [TestCategory("Class Test")]
         public void BillingAccountSummaryMappingTest()
         {
+            //TODO need to use XmlDocument for performance
             var accountXML = XElement.Parse(EXAMPLE_RESPONSE);
             var billingAccount = BillingAccountSummary.Fetch(accountXML);
 

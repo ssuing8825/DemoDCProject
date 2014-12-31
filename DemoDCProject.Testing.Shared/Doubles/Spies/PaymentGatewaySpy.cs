@@ -19,7 +19,7 @@ namespace DemoDCProject.Testing.Shared.Doubles.Spies
         }
         protected override string StoreCreditCardAtTokenProvidersCore(string creditCard, string expirationDate)
         {
-            this.testMediator.MakePaymentVerificationNumberCountOfPaymentsSent++;
+            this.testMediator.StoreCreditCardVerificationNumberCountOfCreditCardsSent++;
             return "";
         }
     }

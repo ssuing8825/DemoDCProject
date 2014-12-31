@@ -51,16 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataLayer\DataFacade.cs" />
-    <Compile Include="DataLayer\DataManagers\CommandFactories\CommandFactoryForTokenDataManager.cs" />
-    <Compile Include="DataLayer\DataManagers\DataManagerBase.cs" />
-    <Compile Include="DataLayer\DataManagers\TokenDataManager.cs" />
-    <Compile Include="DataLayer\DataManagers\TokenDataManagerBase.cs" />
-    <Compile Include="DataLayer\Extensions\DbCommandExtensions.cs" />
+    <Compile Include="Managers\DataLayer\DataFacade.cs" />
+    <Compile Include="Managers\DataLayer\DataManagers\CommandFactories\CommandFactoryForTokenDataManager.cs" />
+    <Compile Include="Managers\DataLayer\DataManagers\DataManagerBase.cs" />
+    <Compile Include="Managers\DataLayer\DataManagers\TokenDataManager.cs" />
+    <Compile Include="Managers\DataLayer\DataManagers\TokenDataManagerBase.cs" />
+    <Compile Include="Managers\DataLayer\Extensions\DbCommandExtensions.cs" />
     <Compile Include="DomainFacade.cs" />
     <Compile Include="DomainFacade_BillingAccount.cs" />
     <Compile Include="DomainFacade_Payments.cs" />
-    <Compile Include="DomainFacade_PayPlan.cs" />
     <Compile Include="Exceptions\BillingAccountNotFoundException.cs" />
     <Compile Include="Exceptions\InvalidSmtpMailAccountException.cs" />
     <Compile Include="Extensions\DisposableExtensions.cs" />
@@ -68,12 +67,13 @@
     <Compile Include="Managers\Gateways\Billing\DuckCreekBillingGateway.cs" />
     <Compile Include="Managers\Gateways\Billing\BillingGatewayBase.cs" />
     <Compile Include="Managers\Gateways\Billing\DuckCreekServiceCallFactory.cs" />
+    <Compile Include="Managers\Gateways\Billing\DuckCreekMappers\DuckCreekXMLtoDTOMappingClass.cs" />
     <Compile Include="Managers\Gateways\Payment\PaymentGatewayBase.cs" />
     <Compile Include="Managers\Gateways\Payment\PaymentTechPaymentGateway.cs" />
     <Compile Include="Managers\Helpers\TokenGenerator.cs" />
     <Compile Include="Managers\BillingAccountManager.cs" />
-    <Compile Include="Models\Domain\Token.cs" />
-    <Compile Include="Models\Public\AuthenticatedPaymentInformation.cs" />
+    <Compile Include="Managers\InternalDto\Token.cs" />
+    <Compile Include="PublicDto\AuthenticatedPaymentInformation.cs" />
     <Compile Include="Exceptions\CreditCardPaymentInformationException.cs" />
     <Compile Include="Exceptions\DemoDCProjectBaseException.cs" />
     <Compile Include="Exceptions\DemoDCProjectBusinessException.cs" />
@@ -82,8 +82,8 @@
     <Compile Include="Exceptions\ServiceLocatorConfigurationInvalidException.cs" />
     <Compile Include="Managers\PaymentManager.cs" />
     <Compile Include="Managers\Helpers\Validators\CreditCardPaymentValidator.cs" />
-    <Compile Include="Models\Public\AccountSearchResult.cs" />
-    <Compile Include="Models\Public\BillingAccountSummary.cs" />
+    <Compile Include="PublicDto\AccountSearchResult.cs" />
+    <Compile Include="PublicDto\BillingAccountSummary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceLocator\ServiceLocatorBase.cs" />
     <Compile Include="ServiceLocator\ServiceLocatorProduction.cs" />
@@ -92,7 +92,6 @@
     <Compile Include="Services\IRuntimeEnvironmentIsolationService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Dto\" />
     <Folder Include="Enums\" />
   </ItemGroup>
   <ItemGroup>

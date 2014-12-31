@@ -14,9 +14,9 @@ namespace DemoDCProject.DomainLayer
         /// <param name="creditCard"></param>
         /// <param name="expirationDate"></param>
         /// <returns></returns>
-        public string GenerateTokenAndStoreCreditCardInformation(int billingAccountId, string creditCard, string expirationDate)
+        public string StoreCreditCardInformation(int billingAccountId, string creditCard, string expirationDate)
         {
-            return PaymentManager.StoreAndGenerateTokenForCreditCard(billingAccountId, creditCard, expirationDate);
+            return PaymentManager.StoreCreditCard(billingAccountId, creditCard, expirationDate);
         }
     }
 

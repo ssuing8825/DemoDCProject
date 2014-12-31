@@ -1,4 +1,5 @@
 ﻿using DemoDCProject.DomainLayer.DataLayer;
+using DemoDCProject.DomainLayer.Exceptions;
 using DemoDCProject.DomainLayer.Managers.Gateways.Billing;
 using DemoDCProject.DomainLayer.Managers.Gateways.Payment;
 using DemoDCProject.DomainLayer.Managers.Helpers;
@@ -26,7 +27,12 @@ namespace DemoDCProject.DomainLayer.Managers
         }
         public async Task<BillingAccountSummary> RetrieveBillingAccountForPolicyId(int policyId)
         {
-            return await BillingGateway.RetrieveBillingAccountSummaryByPolicyId(policyId);
+            var searchResult = await BillingGateway.SearchForBillingAccountByPolicyId(policyId);
+
+            if (searchResult.ReturnCount == 0)
+                throw new BillingAccountNotFoundException("A billing account for policy id " + policyId + " was not found");
+
+            return await BillingGateway.RetrieveBillingAccountSummaryByAccountId(searchResult.AccountId);
         }
 
         public AuthenticatedPaymentInformation AuthenticateCreditCardUsingTokenCore(string nameOnCard, string externalIdentifier, decimal amount, string token, string expirationdate)

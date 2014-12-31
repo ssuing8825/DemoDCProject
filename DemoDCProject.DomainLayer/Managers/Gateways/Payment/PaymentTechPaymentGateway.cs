@@ -25,6 +25,8 @@ namespace DemoDCProject.DomainLayer.Managers.Gateways.Payment
         {
             //This is where the real work of calling paymenttech would go.
             //ConfigurationProvider.PaymentechUrl
+
+            //if this fails log and throw an exception
             throw new NotImplementedException();
         }
     }

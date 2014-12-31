@@ -51,6 +51,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DemoDCProject.DomainLayer\DomainFacade_BillingFunctions.cs" />
     <Compile Include="DemoDCProject.DomainLayer\DomainFacade_PaymentFunctions.cs" />
     <Compile Include="DemoDCProject.DomainLayer\Managers\Gateways\BillingGatewayTests.cs" />
     <Compile Include="DemoDCProject.DomainLayer\TestHelpers\ServiceLocatorConfigurator.cs" />

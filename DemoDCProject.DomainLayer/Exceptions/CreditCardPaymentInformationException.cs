@@ -16,5 +16,5 @@ namespace DemoDCProject.DomainLayer.Exceptions
         public CreditCardPaymentInformationException(string message) : base(message) { }
         public CreditCardPaymentInformationException(string message, Exception inner) : base(message, inner) { }
         private CreditCardPaymentInformationException(SerializationInfo info, StreamingContext context) : base(info, context) { }
-    }
+     }
 }

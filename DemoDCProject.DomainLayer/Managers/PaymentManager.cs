@@ -35,22 +35,48 @@ namespace DemoDCProject.DomainLayer.Managers
         {
             this.serviceLocator = serviceLocator;
         }
-        public string StoreAndGenerateTokenForCreditCard(int billingAccountId, string creditCard, string expirationDate)
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="billingAccountId"></param>
+        /// <param name="creditCard"></param>
+        /// <param name="expirationDate"></param>
+        /// <returns></returns>
+        public string StoreCreditCard(int billingAccountId, string creditCard, string expirationDate)
         {
+
+            //Should do Validation Here. 
+
+
+            //Method could be int month, int year
+            //Method name must be business specific. 
+
+            //Create a tokenNumber for the end user. 
+            var tokenNumber = TokenProvider.GenerateToken();
+            
+            //Store Billing account and token.
+
+            //I could put the rest on the queue for processing because I can't do anything else
+            //Then the other process will update DC and get the PEC and handle failures.
+            //That would give me autmatice retry.  Would need to encrypt CC# for that.  
+           
             //Get the PEC from the billing providere
             var pec = PaymentGateway.StoreCreditCardAtTokenProviders(creditCard, expirationDate);
 
+            //Need to expect a specific exception and catch and handle it.
+
+
             //What do I do if the payment gateway is down.
 
-            //Create a token for the end user. 
-            var token = TokenProvider.GenerateToken();
+        
 
-            //Store both the token the PEC in the billing system
-            BillingGateway.CreateCreditCardBillingPaymentMethod(billingAccountId, pec, token);
+            //Store both the tokenNumber the PEC in the billing system
+            BillingGateway.CreateCreditCardBillingPaymentMethod(billingAccountId, pec, tokenNumber);
 
-           //Now that I have a pec save it to the db with a new token
-            DataFacade.CreateToken(new Token(pec, token));
-            return token;
+            //Now that I have a pec save it to the db with a new tokenNumber
+            DataFacade.CreateToken(new Token(pec, tokenNumber));
+            return tokenNumber;
 
         }
         public AuthenticatedPaymentInformation AuthenticateCreditCardUsingTokenCore(string nameOnCard, string externalIdentifier, decimal amount, string token, string expirationdate)

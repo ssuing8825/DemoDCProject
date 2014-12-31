@@ -11,8 +11,8 @@ namespace DemoDCProject.Testing.Shared.TestMediators
         //can test that those methods are being called.
         public void Reset()
         {
-            MakePaymentVerificationNumberCountOfPaymentsSent = 0;
+            StoreCreditCardVerificationNumberCountOfCreditCardsSent = 0;
         }
-        public int MakePaymentVerificationNumberCountOfPaymentsSent { get; set; }
+        public int StoreCreditCardVerificationNumberCountOfCreditCardsSent { get; set; }
     }
 }

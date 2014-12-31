@@ -50,7 +50,7 @@ namespace DemoDCProject.DomainLayer.Managers.Gateways.Billing
             //May need to call a search to make sure that the account exists before calling this one since the error is pretty ugly.
             string result = await CallDuckCreek(DuckCreekServiceCallFactory.GetAccountSummaryRequest(billingAccountId));
             //SHould check for exceptions like not found and throw
-            return BillingAccountSummary.FetchBillingAccountSummary(result);
+            return BillingAccountSummary.Fetch(result);
         }
 
         protected override async Task<AccountSearchResult> SearchForBillingAccountByPolicyIdCore(int policyId)
@@ -62,18 +62,6 @@ namespace DemoDCProject.DomainLayer.Managers.Gateways.Billing
             
             //Should check for exceptions like not found and throw
             return AccountSearchResult.Fetch(result);
-        }
-
-        protected override async Task<BillingAccountSummary> RetrieveBillingAccountSummaryByPolicyIdCore(int policyId)
-        {
-            var searchResult = await SearchForBillingAccountByPolicyIdCore(policyId);
-
-            if (searchResult.ReturnCount == 0)
-                throw new BillingAccountNotFoundException("A billing account for policy id " + policyId + " was not found");
-
-            string result = await CallDuckCreek(DuckCreekServiceCallFactory.GetAccountSummaryRequest(searchResult.AccountId));
-            //SHould check for exceptions like not found and throw
-            return BillingAccountSummary.FetchBillingAccountSummary(result);
         }
     }
 }

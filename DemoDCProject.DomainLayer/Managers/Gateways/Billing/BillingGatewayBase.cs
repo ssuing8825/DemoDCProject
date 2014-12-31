@@ -9,6 +9,9 @@ namespace DemoDCProject.DomainLayer.Managers.Gateways.Billing
 {
     internal abstract class BillingGatewayBase
     {
+
+        //THis is abstracting the service the way we want to use. 
+
         public void CreateCreditCardBillingPaymentMethod(int billingAccountId, string pec, string tokennumber)
         {
             CreateCreditCardBillingPaymentMethodCore(billingAccountId, pec, tokennumber);
@@ -19,11 +22,6 @@ namespace DemoDCProject.DomainLayer.Managers.Gateways.Billing
             return await RetrieveBillingAccountSummaryByAccountIdCore(billingAccountId);
         }
 
-        public async Task<BillingAccountSummary> RetrieveBillingAccountSummaryByPolicyId(int policyId)
-        {
-            return await RetrieveBillingAccountSummaryByPolicyIdCore(policyId);
-        }
-
         public async Task<AccountSearchResult> SearchForBillingAccountByPolicyId(int policyId)
         {
             return await SearchForBillingAccountByPolicyIdCore(policyId);
@@ -31,8 +29,6 @@ namespace DemoDCProject.DomainLayer.Managers.Gateways.Billing
 
         protected abstract void CreateCreditCardBillingPaymentMethodCore(int billingAccountId, string pec, string tokennumber);
         protected abstract Task<BillingAccountSummary> RetrieveBillingAccountSummaryByAccountIdCore(int billingAccountId);
-        protected abstract Task<BillingAccountSummary> RetrieveBillingAccountSummaryByPolicyIdCore(int policyId);
-
-        protected abstract Task<AccountSearchResult> SearchForBillingAccountByPolicyIdCore(int policyId);
+        protected abstract Task<IEnumerable<BillingAccountSummary>> SearchForBillingAccountByPolicyIdCore(int policyId);
     }
 }

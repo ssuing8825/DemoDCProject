@@ -46,24 +46,7 @@ namespace DemoDCProject.IntegrationTests.DemoDCProject.DomainLayer.Managers.Gate
 
             //Act
             BillingGatewayBase billingGateway = new DuckCreekBillingGateway(serviceLocator);
-            var billingAccount = await billingGateway.RetrieveBillingAccountSummaryByPolicyId(5);
-
-            //Assert.
-
-        }
-
-        [TestMethod]
-        [Priority(-1)]
-        [TestCategory("Class Integration Test")]
-        [ExpectedException(typeof(NotFoundException))]
-        public async Task BillingGateway_RetrieveABillingAccountByPolicyNumber_NotFound()
-        {
-            //Arrange
-            //Would Need to Create the account first and then retrieve it
-
-            //Act
-            BillingGatewayBase billingGateway = new DuckCreekBillingGateway(serviceLocator);
-            var billingAccount = await billingGateway.RetrieveBillingAccountSummaryByPolicyId(0);
+            var billingAccount = await billingGateway.RetrieveBillingAccountSummaryByAccountId(10003);
 
             //Assert.
 

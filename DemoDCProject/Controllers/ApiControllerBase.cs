@@ -22,6 +22,10 @@ namespace DemoDCProject.Controllers
 
         protected virtual DomainFacade MakeDomainFacade()
         {
+
+            //IIS Caches the thread and caches the instance of the domain facade. This means that we don't recreate the 
+            // domain facade over and over. It's actually cached on the same thread. Easier on GC too. 
+            // Entire system is stateless. 
             return ((Global)System.Web.HttpContext.Current.ApplicationInstance).DomainFacade;
         }
 
