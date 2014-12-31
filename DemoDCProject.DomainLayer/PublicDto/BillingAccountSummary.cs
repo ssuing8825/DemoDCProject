@@ -5,36 +5,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace DemoDCProject.DomainLayer.Models.Public
+namespace DemoDCProject.PublicDto
 {
-    public sealed class BillingAccountSummary
+    public sealed class BillingAccountDetail
     {
-        private int accountId;
+        private readonly int accountId;
         public int AccountId { get { return accountId; } }
 
-        private int accountReference;
+        private readonly  int accountReference;
         public int AccountReference { get { return accountReference; } }
 
-        private decimal pastDueAmount;
+        private readonly decimal pastDueAmount;
         public decimal PastDueAmount { get { return pastDueAmount; } }
 
-        private string accountStatus;
+        private readonly  string accountStatus;
         public string AccountStatus { get { return accountStatus; } }
 
-        private BillingAccountSummary() { }
-
-        public static BillingAccountSummary Fetch(string inputXml)
+        private BillingAccountDetail() { }
+        public  BillingAccountDetail(int accountId, int accountReference, decimal pastDueAmount, string accountStatus)
         {
-            return Fetch(XElement.Parse(inputXml));
-        }
-        public static BillingAccountSummary Fetch(XElement inputXml)
-        {
-            var result = new BillingAccountSummary();
-            result.accountId = int.Parse(inputXml.Descendants("AccountId").First().Value);
-            result.accountReference = int.Parse(inputXml.Descendants("AccountReference").First().Value);
-            result.pastDueAmount = decimal.Parse(inputXml.Descendants("PastDueAmount").First().Value);
-            result.accountStatus = inputXml.Descendants("AccountStatus").First().Value;
-            return result;
+            this.accountId = accountId;
+            this.accountReference = accountReference;
+            this.pastDueAmount = pastDueAmount;
+            this.accountStatus = accountStatus;
         }
     }
 }

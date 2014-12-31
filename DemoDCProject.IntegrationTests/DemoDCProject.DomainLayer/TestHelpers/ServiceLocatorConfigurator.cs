@@ -1,4 +1,4 @@
-﻿using DemoDCProject.DomainLayer.DataLayer.DataManagers;
+﻿using DemoDCProject.DomainLayer.Managers.DataLayer.DataManagers;
 using DemoDCProject.DomainLayer.Managers.Helpers;
 using DemoDCProject.DomainLayer.ServiceLocator;
 using DemoDCProject.ServiceProviders;

@@ -66,8 +66,9 @@
     <Compile Include="Exceptions\NotFoundExceptionBase.cs" />
     <Compile Include="Managers\Gateways\Billing\DuckCreekBillingGateway.cs" />
     <Compile Include="Managers\Gateways\Billing\BillingGatewayBase.cs" />
+    <Compile Include="Managers\Gateways\Billing\DuckCreekMappers\BillingAccountSearchToBillingAccountsSummary.cs" />
     <Compile Include="Managers\Gateways\Billing\DuckCreekServiceCallFactory.cs" />
-    <Compile Include="Managers\Gateways\Billing\DuckCreekMappers\DuckCreekXMLtoDTOMappingClass.cs" />
+    <Compile Include="Managers\Gateways\Billing\DuckCreekMappers\BillingAccountDetailMapper.cs" />
     <Compile Include="Managers\Gateways\Payment\PaymentGatewayBase.cs" />
     <Compile Include="Managers\Gateways\Payment\PaymentTechPaymentGateway.cs" />
     <Compile Include="Managers\Helpers\TokenGenerator.cs" />
@@ -82,7 +83,7 @@
     <Compile Include="Exceptions\ServiceLocatorConfigurationInvalidException.cs" />
     <Compile Include="Managers\PaymentManager.cs" />
     <Compile Include="Managers\Helpers\Validators\CreditCardPaymentValidator.cs" />
-    <Compile Include="PublicDto\AccountSearchResult.cs" />
+    <Compile Include="PublicDto\AccountSummary.cs" />
     <Compile Include="PublicDto\BillingAccountSummary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceLocator\ServiceLocatorBase.cs" />

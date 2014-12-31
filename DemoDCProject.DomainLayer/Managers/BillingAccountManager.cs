@@ -1,10 +1,8 @@
-﻿using DemoDCProject.DomainLayer.DataLayer;
-using DemoDCProject.DomainLayer.Exceptions;
+﻿using DemoDCProject.DomainLayer.Exceptions;
 using DemoDCProject.DomainLayer.Managers.Gateways.Billing;
 using DemoDCProject.DomainLayer.Managers.Gateways.Payment;
 using DemoDCProject.DomainLayer.Managers.Helpers;
-using DemoDCProject.DomainLayer.Models.Domain;
-using DemoDCProject.DomainLayer.Models.Public;
+using DemoDCProject.PublicDto;
 using DemoDCProject.DomainLayer.ServiceLocator;
 using System;
 using System.Collections.Generic;
@@ -25,19 +23,18 @@ namespace DemoDCProject.DomainLayer.Managers
         {
             this.serviceLocator = serviceLocator;
         }
-        public async Task<BillingAccountSummary> RetrieveBillingAccountForPolicyId(int policyId)
+        public async Task<IEnumerable<AccountSummary>> RetrieveBillingAccountsForPolicyId(int policyId)
         {
-            var searchResult = await BillingGateway.SearchForBillingAccountByPolicyId(policyId);
+            return await BillingGateway.RetrieveBillingAccountsByPolicyId(policyId);
+        }
+        public async Task<BillingAccountDetail> RetrieveBillingAccountDetailForPolicyId(int policyId)
+        {
+            var result = await BillingGateway.RetrieveBillingAccountDetailByAccountId(policyId);
+            if (result == null)
+                throw new BillingAccountNotFoundException();
 
-            if (searchResult.ReturnCount == 0)
-                throw new BillingAccountNotFoundException("A billing account for policy id " + policyId + " was not found");
-
-            return await BillingGateway.RetrieveBillingAccountSummaryByAccountId(searchResult.AccountId);
+            return result;
         }
 
-        public AuthenticatedPaymentInformation AuthenticateCreditCardUsingTokenCore(string nameOnCard, string externalIdentifier, decimal amount, string token, string expirationdate)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

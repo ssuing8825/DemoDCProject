@@ -1,15 +1,15 @@
-﻿using DemoDCProject.DomainLayer.DataLayer;
-using DemoDCProject.DomainLayer.Managers.Gateways.Billing;
+﻿using DemoDCProject.DomainLayer.Managers.Gateways.Billing;
 using DemoDCProject.DomainLayer.Managers.Gateways.Payment;
 using DemoDCProject.DomainLayer.Managers.Helpers;
-using DemoDCProject.DomainLayer.Models.Domain;
-using DemoDCProject.DomainLayer.Models.Public;
+using DemoDCProject.PublicDto;
 using DemoDCProject.DomainLayer.ServiceLocator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DemoDCProject.DomainLayer.Managers.DataLayer;
+using DemoDCProject.DomainLayer.Managers.InternalDto;
 
 namespace DemoDCProject.DomainLayer.Managers
 {
@@ -72,7 +72,7 @@ namespace DemoDCProject.DomainLayer.Managers
         
 
             //Store both the tokenNumber the PEC in the billing system
-            BillingGateway.CreateCreditCardBillingPaymentMethod(billingAccountId, pec, tokenNumber);
+         //   BillingGateway.CreateCreditCardBillingPaymentMethod(billingAccountId, pec, tokenNumber);
 
             //Now that I have a pec save it to the db with a new tokenNumber
             DataFacade.CreateToken(new Token(pec, tokenNumber));

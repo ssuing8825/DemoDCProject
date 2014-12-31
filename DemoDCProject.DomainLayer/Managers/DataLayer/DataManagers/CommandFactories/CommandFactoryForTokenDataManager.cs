@@ -1,5 +1,5 @@
-﻿using DemoDCProject.DomainLayer.DataLayer.Extensions;
-using DemoDCProject.DomainLayer.Models.Domain;
+﻿using DemoDCProject.DomainLayer.Managers.DataLayer.Extensions;
+using DemoDCProject.DomainLayer.Managers.InternalDto;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoDCProject.DomainLayer.DataLayer.DataManagers.CommandFactories
+namespace DemoDCProject.DomainLayer.Managers.DataLayer.DataManagers.CommandFactories
 {
     internal static class CommandFactoryForTokenDataManager
     {

@@ -1,5 +1,5 @@
 ﻿using DemoDCProject.DomainLayer.Exceptions;
-using DemoDCProject.DomainLayer.Models.Public;
+using DemoDCProject.PublicDto;
 using DemoDCProject.DomainLayer.ServiceLocator;
 using DemoDCProject.ServiceProviders;
 using System;
@@ -21,13 +21,7 @@ namespace DemoDCProject.DomainLayer.Managers.Gateways.Billing
         {
             this.serviceLocator = serviceLocator;
         }
-
-        protected override void CreateCreditCardBillingPaymentMethodCore(int billingAccountId, string pec, string tokennumber)
-        {
-            throw new NotImplementedException();
-        }
-
-        //todo make this async
+ 
         private async Task<string> CallDuckCreek(string request)
         {
             using (var httpClient = new HttpClient())
@@ -45,23 +39,31 @@ namespace DemoDCProject.DomainLayer.Managers.Gateways.Billing
         }
 
 
-        protected override async Task<BillingAccountSummary> RetrieveBillingAccountSummaryByAccountIdCore(int billingAccountId)
+        protected override async Task<BillingAccountDetail> RetrieveBillingAccountDetailByAccountIdCore(int billingAccountId)
         {
             //May need to call a search to make sure that the account exists before calling this one since the error is pretty ugly.
             string result = await CallDuckCreek(DuckCreekServiceCallFactory.GetAccountSummaryRequest(billingAccountId));
-            //SHould check for exceptions like not found and throw
-            return BillingAccountSummary.Fetch(result);
+
+            //Should check for exceptions like not found and throw
+            return BillingAccountDetailMapper.FromXml(result);
         }
 
-        protected override async Task<AccountSearchResult> SearchForBillingAccountByPolicyIdCore(int policyId)
+        protected override async Task<IEnumerable<AccountSummary>> RetrieveBillingAccountsByPolicyIdCore(int policyId)
         {
             var formattedPolicyid = policyId.ToString().PadLeft(6, '0');
-
-            //May need to call a search to make sure that the account exists before calling this one since the error is pretty ugly.
             string result = await CallDuckCreek(DuckCreekServiceCallFactory.SearchForAccountByPolicyId(formattedPolicyid));
-            
+
             //Should check for exceptions like not found and throw
-            return AccountSearchResult.Fetch(result);
+            return BillingAccountSearchToBillingAccountsSummary.FromXml(result);
+        }
+
+        protected override async Task<BillingAccountDetail> RetrieveBillingAccountDetailByPolicyIdCore(int policyId)
+        {
+            var billingAccountsForPolicyNumber = await RetrieveBillingAccountsByPolicyId(policyId);
+            if (billingAccountsForPolicyNumber.Count() == 0)
+                return null;
+
+            return await RetrieveBillingAccountDetailByAccountId(billingAccountsForPolicyNumber.First().AccountId);
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoDCProject.DomainLayer.DataLayer.Extensions
+namespace DemoDCProject.DomainLayer.Managers.DataLayer.Extensions
 {
     internal static class DbCommandExtensions
     {

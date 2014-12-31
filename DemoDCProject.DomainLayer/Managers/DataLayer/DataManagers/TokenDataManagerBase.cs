@@ -1,11 +1,11 @@
-﻿using DemoDCProject.DomainLayer.Models.Domain;
+﻿using DemoDCProject.DomainLayer.Managers.InternalDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoDCProject.DomainLayer.DataLayer.DataManagers
+namespace DemoDCProject.DomainLayer.Managers.DataLayer.DataManagers
 {
     internal abstract class TokenDataManagerBase : DataManagerBase
     {

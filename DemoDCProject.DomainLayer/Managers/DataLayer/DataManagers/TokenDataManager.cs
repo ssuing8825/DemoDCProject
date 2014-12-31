@@ -1,5 +1,5 @@
-﻿using DemoDCProject.DomainLayer.DataLayer.DataManagers.CommandFactories;
-using DemoDCProject.DomainLayer.Models.Domain;
+﻿using DemoDCProject.DomainLayer.Managers.DataLayer.DataManagers.CommandFactories;
+using DemoDCProject.DomainLayer.Managers.InternalDto;
 using DemoDCProject.DomainLayer.ServiceLocator;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoDCProject.DomainLayer.DataLayer.DataManagers
+namespace DemoDCProject.DomainLayer.Managers.DataLayer.DataManagers
 {
     internal sealed class TokenDataManager : TokenDataManagerBase
     {

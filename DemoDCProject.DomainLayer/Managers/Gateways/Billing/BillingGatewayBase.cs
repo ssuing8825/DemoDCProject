@@ -1,4 +1,4 @@
-﻿using DemoDCProject.DomainLayer.Models.Public;
+﻿using DemoDCProject.PublicDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,23 +12,25 @@ namespace DemoDCProject.DomainLayer.Managers.Gateways.Billing
 
         //THis is abstracting the service the way we want to use. 
 
-        public void CreateCreditCardBillingPaymentMethod(int billingAccountId, string pec, string tokennumber)
+
+        public async Task<BillingAccountDetail> RetrieveBillingAccountDetailByAccountId(int billingAccountId)
         {
-            CreateCreditCardBillingPaymentMethodCore(billingAccountId, pec, tokennumber);
+            return await RetrieveBillingAccountDetailByAccountIdCore(billingAccountId);
         }
 
-        public async Task<BillingAccountSummary> RetrieveBillingAccountSummaryByAccountId(int billingAccountId)
+        public async Task<IEnumerable<AccountSummary>> RetrieveBillingAccountsByPolicyId(int policyId)
         {
-            return await RetrieveBillingAccountSummaryByAccountIdCore(billingAccountId);
+            return await RetrieveBillingAccountsByPolicyIdCore(policyId);
         }
 
-        public async Task<AccountSearchResult> SearchForBillingAccountByPolicyId(int policyId)
+        public async Task<BillingAccountDetail> RetrieveBillingAccountDetailByPolicyId(int policyId)
         {
-            return await SearchForBillingAccountByPolicyIdCore(policyId);
+            return await RetrieveBillingAccountDetailByPolicyIdCore(policyId);
         }
 
-        protected abstract void CreateCreditCardBillingPaymentMethodCore(int billingAccountId, string pec, string tokennumber);
-        protected abstract Task<BillingAccountSummary> RetrieveBillingAccountSummaryByAccountIdCore(int billingAccountId);
-        protected abstract Task<IEnumerable<BillingAccountSummary>> SearchForBillingAccountByPolicyIdCore(int policyId);
+        protected abstract Task<BillingAccountDetail> RetrieveBillingAccountDetailByAccountIdCore(int billingAccountId);
+        protected abstract Task<IEnumerable<AccountSummary>> RetrieveBillingAccountsByPolicyIdCore(int policyId);
+        protected abstract Task<BillingAccountDetail> RetrieveBillingAccountDetailByPolicyIdCore(int policyId);
+
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoDCProject.DomainLayer.Models.Domain
+namespace DemoDCProject.DomainLayer.Managers.InternalDto
 {
     [ExcludeFromCodeCoverage]
     public sealed class Token

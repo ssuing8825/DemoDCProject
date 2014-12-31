@@ -1,4 +1,4 @@
-﻿using DemoDCProject.DomainLayer.Models.Public;
+﻿using DemoDCProject.PublicDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +12,11 @@ namespace DemoDCProject.Controllers
 {
     public class AccountSearchController : ApiControllerBase
     {
-        public async Task<BillingAccountSummary> Get(int policyNumber)
+        public async Task<BillingAccountDetail> Get(int policyNumber)
         {
             try
             {
-                return await this.DomainFacade.RetrieveBillingAccountByPolicyId(policyNumber);
+                return await this.DomainFacade.RetrieveBillingAccountDetailByPolicyId(policyNumber);
             }
             catch (Exception ex)
             {

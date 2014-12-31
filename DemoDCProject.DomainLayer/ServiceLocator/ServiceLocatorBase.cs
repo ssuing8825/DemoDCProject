@@ -1,8 +1,8 @@
-﻿using DemoDCProject.DomainLayer.DataLayer;
-using DemoDCProject.DomainLayer.DataLayer.DataManagers;
-using DemoDCProject.DomainLayer.Exceptions;
+﻿using DemoDCProject.DomainLayer.Exceptions;
 using DemoDCProject.DomainLayer.Gateways.Payment;
 using DemoDCProject.DomainLayer.Managers;
+using DemoDCProject.DomainLayer.Managers.DataLayer;
+using DemoDCProject.DomainLayer.Managers.DataLayer.DataManagers;
 using DemoDCProject.DomainLayer.Managers.Gateways.Billing;
 using DemoDCProject.DomainLayer.Managers.Gateways.Payment;
 using DemoDCProject.DomainLayer.Managers.Helpers;

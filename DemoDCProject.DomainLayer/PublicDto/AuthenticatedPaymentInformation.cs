@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoDCProject.DomainLayer.Models.Public
+namespace DemoDCProject.PublicDto
 {
     public sealed class AuthenticatedPaymentInformation
     {

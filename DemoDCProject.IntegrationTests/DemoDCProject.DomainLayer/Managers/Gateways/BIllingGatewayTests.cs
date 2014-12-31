@@ -30,7 +30,7 @@ namespace DemoDCProject.IntegrationTests.DemoDCProject.DomainLayer.Managers.Gate
 
             //Act
             BillingGatewayBase billingGateway = new DuckCreekBillingGateway(serviceLocator);
-            var billingAccount = await billingGateway.RetrieveBillingAccountSummaryByAccountId(10003);
+            var billingAccount = await billingGateway.RetrieveBillingAccountDetailByAccountId(10003);
 
             //Assert.
 
@@ -46,7 +46,7 @@ namespace DemoDCProject.IntegrationTests.DemoDCProject.DomainLayer.Managers.Gate
 
             //Act
             BillingGatewayBase billingGateway = new DuckCreekBillingGateway(serviceLocator);
-            var billingAccount = await billingGateway.RetrieveBillingAccountSummaryByAccountId(10003);
+            var billingAccount = await billingGateway.RetrieveBillingAccountDetailByAccountId(10003);
 
             //Assert.
 

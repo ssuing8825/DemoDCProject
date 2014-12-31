@@ -1,4 +1,4 @@
-﻿using DemoDCProject.DomainLayer.Models.Public;
+﻿using DemoDCProject.PublicDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +15,19 @@ namespace DemoDCProject.DomainLayer
         /// <param name="creditCard"></param>
         /// <param name="expirationDate"></param>
         /// <returns></returns>
-        public async Task<BillingAccountSummary> RetrieveBillingAccountByPolicyId(int policyId)
+        public async Task<IEnumerable<AccountSummary>> RetrieveBillingAccountsByPolicyId(int policyId)
         {
-            return await BillingAccountManager.RetrieveBillingAccountForPolicyId(policyId);
+            return await BillingAccountManager.RetrieveBillingAccountsForPolicyId(policyId);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="policyId"></param>
+        /// <returns></returns>
+        public async Task<BillingAccountDetail> RetrieveBillingAccountDetailByPolicyId(int policyId)
+        {
+            return await BillingAccountManager.RetrieveBillingAccountDetailForPolicyId(policyId);
         }
     }
 

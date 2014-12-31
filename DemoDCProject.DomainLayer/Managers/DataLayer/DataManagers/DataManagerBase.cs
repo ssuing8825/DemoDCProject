@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace DemoDCProject.DomainLayer.DataLayer.DataManagers
+namespace DemoDCProject.DomainLayer.Managers.DataLayer.DataManagers
 {
     internal delegate DbCommand CommandFactory<TCommandParameters>(DbConnection dbConnection, TCommandParameters commandParameters);
     internal delegate DbCommand CommandFactoryWithSpName<TCommandParameters>(DbConnection dbConnection, string storedProcedureName, TCommandParameters commandParameters);

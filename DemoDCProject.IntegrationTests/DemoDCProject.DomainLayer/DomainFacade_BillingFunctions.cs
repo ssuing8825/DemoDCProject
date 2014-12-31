@@ -30,7 +30,7 @@ namespace DemoDCProject.IntegrationTests
             // Nothing to arrange here. Fake is already set.
 
             // Act
-            var billingAccount = domainFacadeUnderTest.RetrieveBillingAccountByPolicyId(5);
+            var billingAccount = domainFacadeUnderTest.RetrieveBillingAccountDetailByPolicyId(5);
 
             // Assert
             Assert.IsNotNull(billingAccount);
@@ -45,7 +45,7 @@ namespace DemoDCProject.IntegrationTests
             // Nothing to arrange here. Fake is already set.
 
             // Act
-            var billingAccount = await domainFacadeUnderTest.RetrieveBillingAccountByPolicyId(3);
+            var billingAccount = await domainFacadeUnderTest.RetrieveBillingAccountDetailByPolicyId(3);
 
         }
     }
