@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IDomainFacade.cs" />
     <Compile Include="Managers\DataLayer\DataFacade.cs" />
     <Compile Include="Managers\DataLayer\DataManagers\CommandFactories\CommandFactoryForTokenDataManager.cs" />
     <Compile Include="Managers\DataLayer\DataManagers\DataManagerBase.cs" />

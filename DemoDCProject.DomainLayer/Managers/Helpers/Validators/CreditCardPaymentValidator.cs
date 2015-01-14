@@ -9,19 +9,19 @@ namespace DemoDCProject.DomainLayer.Managers.Validators
 {
     internal static class CreditCardPaymentValidator
     {
-        public static void Validate(string nameOnCard, string externalIdentifier, decimal amount, string token, string expirationdate)
+        public static void Validate(string externalIdentifier, string creditcard, int expirationMonth, int expirationYear)
         {
-            if (string.IsNullOrEmpty(nameOnCard))
-                throw new CreditCardPaymentInformationException("The name on the creditcard must be provided and cannot be null or empty");
-
             if (string.IsNullOrEmpty(externalIdentifier))
                 throw new CreditCardPaymentInformationException("The external identifier must be provided and cannot be null or empty");
 
-            if (amount <= 0)
-                throw new CreditCardPaymentInformationException("The amount of the payment must be provided and must be greater that 0");
+            if (expirationMonth <= 0 || expirationMonth > 12)
+                throw new CreditCardPaymentInformationException("The month of the credit card must be between 1 and 12");
 
-            if (string.IsNullOrEmpty(token))
-                throw new CreditCardPaymentInformationException("The token for the payment must be provided and cannot be null or empty");
+            //TODO Validate Credit Card
+
+            //TODO Validate the Year and month combination in relation to the current month and year.
+            //if (expirationYear)
+            //    throw new CreditCardPaymentInformationException("The token for the payment must be provided and cannot be null or empty");
         }
     }
 }

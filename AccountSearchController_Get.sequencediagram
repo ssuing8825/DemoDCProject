@@ -1,0 +1,1011 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" dslVersion="1.0.0.0" Id="ce01d781-6b01-4604-a50f-1666cb108663" name="AccountSearchController_Get" mode="DotNet" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="b6955224-f74b-4fbb-a61d-9e85eff09e8b" name="AccountSearchController_Get" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification Id="087d0e2f-18ef-4a62-a39d-4f91351b61cf" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="d5046cef-0a92-4f35-9682-78d386b083f2" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="b206798b-c46f-491a-82e2-db18959a6679" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="48f760a3-03e9-4be1-bebe-a3b271f39a74" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="bd4a9ba6-7508-473c-a231-25327c638a27" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="d9249f70-7414-49d7-b209-128395121337" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="4217a60b-7955-4edc-a5d5-59e313bd6389" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="caa85e17-9306-4578-b03f-edb191babd0c" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="6a8c6af9-a2b7-475e-ba9b-0e79da86890c" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="c88aa9f9-9d3b-4bda-9ff0-f387f5212826" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="630e4da9-8838-4f1a-97ba-c87976be542b" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="ae3e27dd-92c2-4bc7-ad75-3e2f772c753d" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="a3f43bf2-9159-4847-82c9-0e198d292db6" LastKnownName="ExecutionOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="4fc9b78b-51db-4466-98e4-f995748cf59a" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="a51e37f7-fa08-43c9-9396-92f742e9eff4" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="b206798b-c46f-491a-82e2-db18959a6679" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="1f42c7e3-2935-403b-8bee-0d8114ed8518" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget Id="327d7dc9-d879-4b10-811d-f5cfe295ebe0" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="48f760a3-03e9-4be1-bebe-a3b271f39a74" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment Id="351bb0d3-283c-4339-889f-5b01859983dc" name="CombinedFragment1" interactionOperator="Alt" customInteractionOperator="Try">
+            <coveredLifelines>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+              <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="858eebd8-3a0f-4cdb-bb10-fd8cdc53e3e5" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+                  <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+                  <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+                  <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+                  <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+                </coveredLifelines>
+                <fragments>
+                  <combinedFragment Id="3e1fc7c6-76e9-4b45-932e-9765d7a30d84" name="CombinedFragment1" interactionOperator="Opt" customInteractionOperator="If">
+                    <coveredLifelines>
+                      <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+                      <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand Id="2ce4ac02-0524-40ff-b43d-3660c062f3fb" name="InteractionOperand1">
+                        <coveredLifelines>
+                          <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+                          <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+                        </coveredLifelines>
+                        <guard>
+                          <interactionConstraint Id="dfaaa1a6-f6ec-428f-90c4-47b281214cde" guardText="if (result == null)" />
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker Id="c1a33703-5983-4730-b5e6-fe8fb56c7648" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="0045c665-984a-472b-bb6e-40b023634eae" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="7f6e8231-056b-4c86-adbd-f29137f12e7d" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="7a94bca2-143a-4b99-92e4-7c08240920c8" LastKnownName="OperandOccurrenceSpecification" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
+                <guard>
+                  <interactionConstraint Id="6a7b637b-1b0e-4bb3-bd64-dbfefd81f009" guardText="try" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="bd4a9ba6-7508-473c-a231-25327c638a27" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="6a8c6af9-a2b7-475e-ba9b-0e79da86890c" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="c034fb8e-c124-4438-98bf-09d3a6a4e635" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="8de5c13e-a170-4261-bf4a-c92f1a0bbf2d" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="671ae50d-245c-4769-904a-c7874cf4ee2c" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="6e0b07dc-6c49-47d0-92d0-993049e4e152" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="4f360a8d-5bed-4140-a109-1686e2e01520" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="56bee064-a4b5-49c6-9cd1-374649a2d3e9" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="043c4e6d-12c2-4095-adea-68698d80bc43" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="bad1396d-952a-4b1b-adb9-9d329d0aa687" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+              <interactionOperand Id="e14cdf37-76bf-4cf4-8fdb-4d0189b7c788" name="InteractionOperand2">
+                <coveredLifelines>
+                  <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+                  <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+                  <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+                  <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+                  <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="91c42c1b-8810-405c-9bba-f0097c8c7ebf" guardText="catch (Exception)" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="c88aa9f9-9d3b-4bda-9ff0-f387f5212826" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="a51e37f7-fa08-43c9-9396-92f742e9eff4" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="015da663-9381-4750-b62d-ed177fba6db1" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="aa7966cb-e567-431b-bb5b-6ba896f19df5" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="493e2921-5066-4a20-9828-25fb5e462919" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="0c377283-71ed-4d4d-b083-f1b536f33adb" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="13c2a3b2-19ef-4e6a-9345-301371e600c8" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="a5e6dc3f-bad6-4e91-8838-7bc1ba59b55a" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="a53d6c12-5273-4a6a-9d9f-b066399df5ff" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="1d43b9ae-7d7b-4164-a474-d303ccd3f2c0" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="043c4e6d-12c2-4095-adea-68698d80bc43" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="bd4a9ba6-7508-473c-a231-25327c638a27" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="4f360a8d-5bed-4140-a109-1686e2e01520" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="c034fb8e-c124-4438-98bf-09d3a6a4e635" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="671ae50d-245c-4769-904a-c7874cf4ee2c" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="0f0711f8-60b1-4d8f-8f70-65b5ed1f40fd" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="32fdde41-2dbb-4f7f-a58d-40a4d558aa18" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="1fd173e1-2f46-4d32-a5b0-920a951ebe41" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="4265fa91-8d03-46fa-9e4e-d14c80f99523" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="2e4a4482-150d-4c83-8757-d18f18afe36a" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="8bb9a335-bc00-4e02-9eb0-fe8131c12ef1" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="22c36844-9f31-49cd-8eb8-4d135a027ebb" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="1fd173e1-2f46-4d32-a5b0-920a951ebe41" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="f7caf211-3600-4d05-9a28-0021a74b3fb3" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d9249f70-7414-49d7-b209-128395121337" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="4265fa91-8d03-46fa-9e4e-d14c80f99523" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="d3758966-37eb-4b71-b4b1-e7ed3abe0239" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="2038aa73-86f1-4081-9fd6-d405e8b0a495" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="fe91d209-a25f-425a-87da-c127bd1a1c60" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="8c1766c9-12e3-433f-9692-6869eda112c7" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="777aac30-9c34-43cd-ab4d-6d4f6f20af3b" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="55c9084f-b4d2-40eb-9e48-8f143f7dacd2" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="c1a33703-5983-4730-b5e6-fe8fb56c7648" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="017ac906-ed36-4191-87d0-567b7b4ccd57" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="c98c86ee-67ec-4276-ae11-55e810341659" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="b0ebe933-4d45-4eef-a742-cef4abe6388c" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="0045c665-984a-472b-bb6e-40b023634eae" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="12d24878-284b-4995-8f45-32721d14cdaf" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="fe91d209-a25f-425a-87da-c127bd1a1c60" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3afe0ffb-e976-48f3-94d0-e52882e095ab" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8c1766c9-12e3-433f-9692-6869eda112c7" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2e4a4482-150d-4c83-8757-d18f18afe36a" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="b75933cc-36ba-493d-9c25-161f4d41fc94" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="c57887de-45e2-4fd5-98b3-be534c15ebe4" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="47aaeec6-ec83-4eb9-9b28-018367cc47be" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="e3f1bdb5-3d5f-4d49-bf5a-7df1c46f0a55" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="dd2e7977-5008-429e-a4b1-99886ef69730" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="950c8a4c-3662-40ed-91ee-1d99a4dc1ba1" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="08cbf313-c3cf-46c9-80a4-977b3c78470b" LastKnownName="ExecutionOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="a2a703ed-b55f-4d98-b7ba-e401eeda7da4" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="47aaeec6-ec83-4eb9-9b28-018367cc47be" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="231a47b5-868b-44b6-930c-6a934a2e541c" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="777aac30-9c34-43cd-ab4d-6d4f6f20af3b" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e3f1bdb5-3d5f-4d49-bf5a-7df1c46f0a55" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="dd2e7977-5008-429e-a4b1-99886ef69730" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="10a80d07-4a81-4eba-a936-8f09cf3245f7" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="08cbf313-c3cf-46c9-80a4-977b3c78470b" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="950c8a4c-3662-40ed-91ee-1d99a4dc1ba1" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="347ded3b-1a27-4d11-8c50-76522d80388a" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="950c8a4c-3662-40ed-91ee-1d99a4dc1ba1" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="655eb70b-b5a8-4558-bcf8-e8809e6ab8b4" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="347ded3b-1a27-4d11-8c50-76522d80388a" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="08cbf313-c3cf-46c9-80a4-977b3c78470b" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="b05ee3de-f2a8-4219-b7b7-9e6fd01a0a59" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="55c9084f-b4d2-40eb-9e48-8f143f7dacd2" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="a2a703ed-b55f-4d98-b7ba-e401eeda7da4" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="c57887de-45e2-4fd5-98b3-be534c15ebe4" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="2995e88e-358f-4eac-becc-4f318cde90fb" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="7f6e8231-056b-4c86-adbd-f29137f12e7d" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="c1a33703-5983-4730-b5e6-fe8fb56c7648" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="4d7e5501-1bc9-46a5-9298-898f1fd0fbd9" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="eda1ebc3-57df-4c72-b693-bb43a0337a41" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="6820c187-452c-466d-93f8-8fe1b0c60a7a" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="fa56cdfe-39ca-4dbc-a392-9c49607de2c2" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="ef2d8f72-6dbb-42f8-a7b4-70e1803d416d" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="87a6c266-4242-40c0-8223-53d544e71b10" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="ed392513-6ee9-4463-a75a-22a842bb33d9" LastKnownName="ExecutionOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="94cacad5-7052-4dc2-ad53-831a1f831338" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="6820c187-452c-466d-93f8-8fe1b0c60a7a" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="1fc14e96-8872-4a22-b11c-07cdf816df50" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="fa56cdfe-39ca-4dbc-a392-9c49607de2c2" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="017ac906-ed36-4191-87d0-567b7b4ccd57" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="ef2d8f72-6dbb-42f8-a7b4-70e1803d416d" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="0109bcf4-ad2c-4bc7-88d6-4db237443c56" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="ed392513-6ee9-4463-a75a-22a842bb33d9" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="87a6c266-4242-40c0-8223-53d544e71b10" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="f243733a-e9b8-44ba-a1d2-9aac943bf0e8" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="2c099a02-5760-4083-88ed-80d96ee3f142" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="caa87903-978e-402c-a5d3-1240bff27590" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="6ac657a6-4601-433b-9024-c3074a73c2b6" LastKnownName="ExecutionOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="87a6c266-4242-40c0-8223-53d544e71b10" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="2036cf34-3ea1-4d36-9af3-deb0f8e3f908" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="f243733a-e9b8-44ba-a1d2-9aac943bf0e8" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2c099a02-5760-4083-88ed-80d96ee3f142" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="9ab306c9-f3ba-40ac-b223-09e401d9e69d" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="6ac657a6-4601-433b-9024-c3074a73c2b6" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="caa87903-978e-402c-a5d3-1240bff27590" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="fe8153e9-e498-445d-80ed-38a20e0ea47e" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="9b44bd18-6b97-4406-a767-a5c1358d654c" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="caa87903-978e-402c-a5d3-1240bff27590" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="d772221f-ccd3-4e84-8fc4-db8cbdff5c12" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="fe8153e9-e498-445d-80ed-38a20e0ea47e" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="9b44bd18-6b97-4406-a767-a5c1358d654c" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="7ed128a8-f951-45ca-9601-4cde866c9de1" name="LostFoundTarget" />
+          <executionOccurrenceSpecification Id="6ac657a6-4601-433b-9024-c3074a73c2b6" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="652e7b10-e2da-48b7-9add-2a5027c4b848" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="ed392513-6ee9-4463-a75a-22a842bb33d9" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="fd8c1974-0522-4a72-bbdf-e15f8838a1dc" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="94cacad5-7052-4dc2-ad53-831a1f831338" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="c98c86ee-67ec-4276-ae11-55e810341659" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="eda1ebc3-57df-4c72-b693-bb43a0337a41" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="b5634aa7-2c7e-4ca2-b466-2c237d956f04" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b0ebe933-4d45-4eef-a742-cef4abe6388c" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="f5513873-a5c2-4737-a437-8bb5d700d6a1" name="LostFoundTarget" />
+          <operandOccurrenceSpecification Id="7a94bca2-143a-4b99-92e4-7c08240920c8" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="0045c665-984a-472b-bb6e-40b023634eae" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8bb9a335-bc00-4e02-9eb0-fe8131c12ef1" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="12d24878-284b-4995-8f45-32721d14cdaf" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="2038aa73-86f1-4081-9fd6-d405e8b0a495" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="73706f9d-69e0-4372-93c1-b1fd96968149" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="4217a60b-7955-4edc-a5d5-59e313bd6389" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="22c36844-9f31-49cd-8eb8-4d135a027ebb" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="32fdde41-2dbb-4f7f-a58d-40a4d558aa18" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="2c229a13-37b0-46dc-ba9c-7dcd4016f91d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget Id="b106c01e-19c3-4929-8e4b-845046e3e3ea" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="caa85e17-9306-4578-b03f-edb191babd0c" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="56bee064-a4b5-49c6-9cd1-374649a2d3e9" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="6e0b07dc-6c49-47d0-92d0-993049e4e152" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="8de5c13e-a170-4261-bf4a-c92f1a0bbf2d" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="6a8c6af9-a2b7-475e-ba9b-0e79da86890c" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="bad1396d-952a-4b1b-adb9-9d329d0aa687" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="015da663-9381-4750-b62d-ed177fba6db1" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="13c2a3b2-19ef-4e6a-9345-301371e600c8" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="c88aa9f9-9d3b-4bda-9ff0-f387f5212826" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="a53d6c12-5273-4a6a-9d9f-b066399df5ff" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="493e2921-5066-4a20-9828-25fb5e462919" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="630e4da9-8838-4f1a-97ba-c87976be542b" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="41a93233-2cd3-4ed1-a969-fc91b931072c" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="a3f43bf2-9159-4847-82c9-0e198d292db6" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="ae3e27dd-92c2-4bc7-ad75-3e2f772c753d" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="42e9d5ca-14fa-4f75-9080-718015841b0e" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="ae3e27dd-92c2-4bc7-ad75-3e2f772c753d" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="a279d674-312a-4bf3-8912-c42ee8b9f43c" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="42e9d5ca-14fa-4f75-9080-718015841b0e" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="a3f43bf2-9159-4847-82c9-0e198d292db6" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="e70a58d5-0a36-4fe4-923e-77d8d891e870" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="4fc9b78b-51db-4466-98e4-f995748cf59a" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="b042edcb-7fce-4b9a-876d-35fd0d18c517" name="LostFoundTarget" />
+          <operandOccurrenceSpecification Id="a51e37f7-fa08-43c9-9396-92f742e9eff4" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="a5e6dc3f-bad6-4e91-8838-7bc1ba59b55a" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" LastKnownName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="0c377283-71ed-4d4d-b083-f1b536f33adb" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" LastKnownName="this.domainFacade.billingAccountManager : BillingAccountManager" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="aa7966cb-e567-431b-bb5b-6ba896f19df5" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="0a947b02-22d9-4e30-acdd-637188863370" LastKnownName="this.domainFacade : DomainFacade" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="1d43b9ae-7d7b-4164-a474-d303ccd3f2c0" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" LastKnownName="BillingAccountNotFoundException : BillingAccountNotFoundException" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="d5046cef-0a92-4f35-9682-78d386b083f2" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="d6c9bdca-d7a3-4b8d-be18-7da16b2d291c" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" LastKnownName="this : AccountSearchController" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="9a1f1929-36e3-42f8-86a9-5d13e67f55f8" name="this : AccountSearchController" isActor="false" lifelineDisplayName="this : AccountSearchController" referencedInstance="(Assembly=$(00c038c0-71ee-40e0-a6ad-d987dc156f05.OutputPathUri) Namespace=DemoDCProject.Controllers Type=AccountSearchController ObjectInstance=&quot;Object instance 2&quot;)" referencedType="DemoDCProject‎.Controllers‎.AccountSearchController">
+            <referencesInternal>
+              <reference Id="ec7dd563-a7c1-455b-9ec1-b2ace13960da" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.Controllers)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(00c038c0-71ee-40e0-a6ad-d987dc156f05.OutputPathUri)&amp;quot; Namespace=DemoDCProject.Controllers Type=AccountSearchController)&quot;)" tag="DGQL" />
+              <reference Id="e95174ac-a165-41ec-a1e6-fd655b84b238" handle="(Assembly=&quot;$(00c038c0-71ee-40e0-a6ad-d987dc156f05.OutputPathUri)&quot; Namespace=DemoDCProject.Controllers Type=AccountSearchController)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="b206798b-c46f-491a-82e2-db18959a6679" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="d5046cef-0a92-4f35-9682-78d386b083f2" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="0a947b02-22d9-4e30-acdd-637188863370" name="this.domainFacade : DomainFacade" isActor="false" lifelineDisplayName="this.domainFacade : DomainFacade" referencedInstance="(Assembly=$(00c038c0-71ee-40e0-a6ad-d987dc156f05.OutputPathUri) Namespace=DemoDCProject.Controllers Type=ApiControllerBase Member=domainFacade ObjectInstance=&quot;Object instance 3&quot;)" referencedType="DemoDCProject‎.DomainLayer‎.DomainFacade">
+            <referencesInternal>
+              <reference Id="e804ff85-f093-44bc-8773-3a70d1e3f2fd" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.DomainLayer)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer Type=DomainFacade)&quot;)" tag="DGQL" />
+              <reference Id="bd9197eb-9b49-4fd4-b6e1-95e60271f7fe" handle="(Assembly=&quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&quot; Namespace=DemoDCProject.DomainLayer Type=DomainFacade)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="c034fb8e-c124-4438-98bf-09d3a6a4e635" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="1fd173e1-2f46-4d32-a5b0-920a951ebe41" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="32fdde41-2dbb-4f7f-a58d-40a4d558aa18" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="8de5c13e-a170-4261-bf4a-c92f1a0bbf2d" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="015da663-9381-4750-b62d-ed177fba6db1" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="aa7966cb-e567-431b-bb5b-6ba896f19df5" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="8d0695f2-22ce-4e8c-b9f8-f8d537115a63" name="this.domainFacade.billingAccountManager : BillingAccountManager" isActor="false" lifelineDisplayName="this.domainFacade.billingAccountManager : BillingAccountManager" referencedInstance="(Assembly=$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri) Namespace=DemoDCProject.DomainLayer Type=DomainFacade Member=billingAccountManager ObjectInstance=&quot;Object instance 4&quot;)" referencedType="DemoDCProject‎.DomainLayer‎.Managers‎.BillingAccountManager">
+            <referencesInternal>
+              <reference Id="d0a2ab89-6cfa-4dc7-81ee-a9233eedd386" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.DomainLayer.Managers)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Managers Type=BillingAccountManager)&quot;)" tag="DGQL" />
+              <reference Id="2964223a-e4ff-422f-aa29-ee7cf4d0bfd5" handle="(Assembly=&quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&quot; Namespace=DemoDCProject.DomainLayer.Managers Type=BillingAccountManager)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="671ae50d-245c-4769-904a-c7874cf4ee2c" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="fe91d209-a25f-425a-87da-c127bd1a1c60" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="2038aa73-86f1-4081-9fd6-d405e8b0a495" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="6e0b07dc-6c49-47d0-92d0-993049e4e152" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="493e2921-5066-4a20-9828-25fb5e462919" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="0c377283-71ed-4d4d-b083-f1b536f33adb" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="08450c76-3f53-456b-b0b0-3bc7ea7d22ee" name="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" isActor="false" lifelineDisplayName="this.domainFacade.billingAccountManager.billingGateway : BillingGatewayBase" referencedInstance="(Assembly=$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri) Namespace=DemoDCProject.DomainLayer.Managers Type=BillingAccountManager Member=billingGateway ObjectInstance=&quot;Object instance 5&quot;)" referencedType="DemoDCProject‎.DomainLayer‎.Managers‎.Gateways‎.Billing‎.BillingGatewayBase">
+            <referencesInternal>
+              <reference Id="952c9543-4f2a-4048-ab9c-9d1c05bce2b3" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.DomainLayer.Managers.Gateways.Billing)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Managers.Gateways.Billing Type=BillingGatewayBase)&quot;)" tag="DGQL" />
+              <reference Id="149990b5-9421-464c-b43d-566e1d562cf8" handle="(Assembly=&quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&quot; Namespace=DemoDCProject.DomainLayer.Managers.Gateways.Billing Type=BillingGatewayBase)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="4f360a8d-5bed-4140-a109-1686e2e01520" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="47aaeec6-ec83-4eb9-9b28-018367cc47be" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="c57887de-45e2-4fd5-98b3-be534c15ebe4" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="56bee064-a4b5-49c6-9cd1-374649a2d3e9" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="13c2a3b2-19ef-4e6a-9345-301371e600c8" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="a5e6dc3f-bad6-4e91-8838-7bc1ba59b55a" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="81c160a2-e2f2-44c1-a3bb-253e0ec979a8" name="BillingAccountNotFoundException : BillingAccountNotFoundException" isActor="false" lifelineDisplayName="BillingAccountNotFoundException : BillingAccountNotFoundException" referencedInstance="(Assembly=$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri) Namespace=DemoDCProject.DomainLayer.Exceptions Type=BillingAccountNotFoundException ObjectInstance=&quot;Object instance 9&quot;)" referencedType="DemoDCProject‎.DomainLayer‎.Exceptions‎.BillingAccountNotFoundException">
+            <referencesInternal>
+              <reference Id="ab2d372f-bcd9-4bfa-a770-f8b81e0678ad" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.DomainLayer.Exceptions)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=BillingAccountNotFoundException)&quot;)" tag="DGQL" />
+              <reference Id="e8a92f08-128e-4537-8720-9d8455031080" handle="(Assembly=&quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=BillingAccountNotFoundException)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="043c4e6d-12c2-4095-adea-68698d80bc43" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="7f6e8231-056b-4c86-adbd-f29137f12e7d" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="6820c187-452c-466d-93f8-8fe1b0c60a7a" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="eda1ebc3-57df-4c72-b693-bb43a0337a41" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="7a94bca2-143a-4b99-92e4-7c08240920c8" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="bad1396d-952a-4b1b-adb9-9d329d0aa687" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="a53d6c12-5273-4a6a-9d9f-b066399df5ff" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="1d43b9ae-7d7b-4164-a474-d303ccd3f2c0" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="8c2d0f89-292b-48bb-b492-dbda9dd93732" name="Get" messageKind="Found" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="538324ee-bbb7-4825-b0a4-f599a30ea4dc" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.Controllers)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(00c038c0-71ee-40e0-a6ad-d987dc156f05.OutputPathUri)&amp;quot; Namespace=DemoDCProject.Controllers Type=AccountSearchController)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(00c038c0-71ee-40e0-a6ad-d987dc156f05.OutputPathUri)&amp;quot; Namespace=DemoDCProject.Controllers Type=AccountSearchController Member=(Name=Get OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32)]))&quot;)" tag="DGQL" />
+              <reference Id="8c1cbc09-e095-492a-81d3-62dbe2b3e6fd" handle="(Assembly=&quot;$(00c038c0-71ee-40e0-a6ad-d987dc156f05.OutputPathUri)&quot; Namespace=DemoDCProject.Controllers Type=AccountSearchController Member=(Name=Get OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <lostFoundTargetMoniker Id="327d7dc9-d879-4b10-811d-f5cfe295ebe0" LastKnownName="LostFoundTarget" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="48f760a3-03e9-4be1-bebe-a3b271f39a74" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="93ed95f7-c026-4e04-9a17-336fdbb48f00" name="RetrieveBillingAccountDetailByPolicyId" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="this.DomainFacade.RetrieveBillingAccountDetailByPolicyId(policyNumber)">
+            <referencesInternal>
+              <reference Id="933d22d9-cf27-4cb1-8dc4-d896881c46a1" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.DomainLayer)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer Type=DomainFacade)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer Type=DomainFacade Member=(Name=RetrieveBillingAccountDetailByPolicyId OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32)]))&quot;)" tag="DGQL" />
+              <reference Id="c65474e6-3365-4c54-b6a5-12a383764e80" handle="(Assembly=&quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&quot; Namespace=DemoDCProject.DomainLayer Type=DomainFacade Member=(Name=RetrieveBillingAccountDetailByPolicyId OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="d9249f70-7414-49d7-b209-128395121337" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="4265fa91-8d03-46fa-9e4e-d14c80f99523" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="1e028a88-272e-4306-af1a-35aa77e292ef" name="RetrieveBillingAccountDetailForPolicyId" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="BillingAccountManager.RetrieveBillingAccountDetailForPolicyId(policyId)">
+            <referencesInternal>
+              <reference Id="72237467-6b88-477e-81ab-b3186ab7de5c" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.DomainLayer.Managers)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Managers Type=BillingAccountManager)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Managers Type=BillingAccountManager Member=(Name=RetrieveBillingAccountDetailForPolicyId OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32)]))&quot;)" tag="DGQL" />
+              <reference Id="ca54df88-4d15-4501-a767-66f569082245" handle="(Assembly=&quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&quot; Namespace=DemoDCProject.DomainLayer.Managers Type=BillingAccountManager Member=(Name=RetrieveBillingAccountDetailForPolicyId OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="2e4a4482-150d-4c83-8757-d18f18afe36a" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="8c1766c9-12e3-433f-9692-6869eda112c7" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="2f86647c-bd5a-4635-baa1-a6c416ea16e0" name="RetrieveBillingAccountDetailByAccountId" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="BillingGateway.RetrieveBillingAccountDetailByAccountId(policyId)">
+            <referencesInternal>
+              <reference Id="2505922c-93b9-4338-9547-62ca2b3bf965" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.DomainLayer.Managers.Gateways.Billing)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Managers.Gateways.Billing Type=BillingGatewayBase)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Managers.Gateways.Billing Type=BillingGatewayBase Member=(Name=RetrieveBillingAccountDetailByAccountId OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32)]))&quot;)" tag="DGQL" />
+              <reference Id="9d5322df-4e06-4551-b86c-2ab510a17d99" handle="(Assembly=&quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&quot; Namespace=DemoDCProject.DomainLayer.Managers.Gateways.Billing Type=BillingGatewayBase Member=(Name=RetrieveBillingAccountDetailByAccountId OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="777aac30-9c34-43cd-ab4d-6d4f6f20af3b" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="e3f1bdb5-3d5f-4d49-bf5a-7df1c46f0a55" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="386835f5-0f7b-46bb-8554-dc3897e7480a" name="RetrieveBillingAccountDetailByAccountIdCore" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="RetrieveBillingAccountDetailByAccountIdCore(billingAccountId)">
+            <referencesInternal>
+              <reference Id="aa6a7796-f670-4fb5-98d4-00663dfccc23" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.DomainLayer.Managers.Gateways.Billing)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Managers.Gateways.Billing Type=BillingGatewayBase)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Managers.Gateways.Billing Type=BillingGatewayBase Member=(Name=RetrieveBillingAccountDetailByAccountIdCore OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Int32)]))&quot;)" tag="DGQL" />
+              <reference Id="23022704-d19c-4b5a-a3ef-bf698ff1239e" handle="(Assembly=&quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&quot; Namespace=DemoDCProject.DomainLayer.Managers.Gateways.Billing Type=BillingGatewayBase Member=(Name=RetrieveBillingAccountDetailByAccountIdCore OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Int32)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="dd2e7977-5008-429e-a4b1-99886ef69730" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="347ded3b-1a27-4d11-8c50-76522d80388a" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="208c9c8c-0398-4ac4-81c2-ecdec1d5b1d5" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="a2a703ed-b55f-4d98-b7ba-e401eeda7da4" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="55c9084f-b4d2-40eb-9e48-8f143f7dacd2" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="2498c486-6d03-47ad-80ae-768da5d71f56" name="Create BillingAccountNotFoundException" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false" signatureText="new BillingAccountNotFoundException()">
+            <referencesInternal>
+              <reference Id="402919f8-2647-4430-ada3-ff8d07e2acb6" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.DomainLayer.Exceptions)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=BillingAccountNotFoundException)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=BillingAccountNotFoundException Member=.ctor)&quot;)" tag="DGQL" />
+              <reference Id="f2133b37-a835-49c9-bd3f-ac77afa2213f" handle="(Assembly=&quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=BillingAccountNotFoundException Member=.ctor)" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="017ac906-ed36-4191-87d0-567b7b4ccd57" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="fa56cdfe-39ca-4dbc-a392-9c49607de2c2" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="4f969f92-1c8b-4086-88a3-7266afeeb6e6" name="Create NotFoundException" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="true">
+            <referencesInternal>
+              <reference Id="cd6b2a97-7bf0-4ef3-91da-3b2aabb630c3" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.DomainLayer.Exceptions)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=NotFoundException)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=NotFoundException Member=.ctor)&quot;)" tag="DGQL" />
+              <reference Id="5e2459cf-ac67-4870-be32-7b667af6cbb5" handle="(Assembly=&quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=NotFoundException Member=.ctor)" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="ef2d8f72-6dbb-42f8-a7b4-70e1803d416d" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="f243733a-e9b8-44ba-a1d2-9aac943bf0e8" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="d10fa218-8584-4172-8baa-398f674ea7c2" name="Create DemoDCProjectBusinessException" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="true">
+            <referencesInternal>
+              <reference Id="7d30542e-498b-49af-b12c-daefe2c103e7" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.DomainLayer.Exceptions)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=DemoDCProjectBusinessException)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=DemoDCProjectBusinessException Member=.ctor)&quot;)" tag="DGQL" />
+              <reference Id="c52415b3-bd18-496f-8971-06f30f509cbf" handle="(Assembly=&quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=DemoDCProjectBusinessException Member=.ctor)" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="2c099a02-5760-4083-88ed-80d96ee3f142" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="fe8153e9-e498-445d-80ed-38a20e0ea47e" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="94aad8da-22e8-441c-8785-f9e61e1ed2f0" name="Create DemoDCProjectBaseException" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="ccb41980-2993-48a2-b533-0a05db7f8230" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.DomainLayer.Exceptions)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=DemoDCProjectBaseException)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&amp;quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=DemoDCProjectBaseException Member=.ctor)&quot;)" tag="DGQL" />
+              <reference Id="c7be5fe0-ce45-46d1-8931-58b18496491d" handle="(Assembly=&quot;$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri)&quot; Namespace=DemoDCProject.DomainLayer.Exceptions Type=DemoDCProjectBaseException Member=.ctor)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO2WQU/CQBCF308hnPRCzxow0SpCYtAInk0pCDWlJbQ11l/vt0MbFY0xeBFDNnRn3755O50pk21rqKlWihQo5vnCaiLfVrG67ARagJ2orZHmMDLdKmXkaqgPt6OmDnQKnsFbaIxfCfoANwY5lmfDN+vOWCueHifn2E/8ElbnaIYq7LSEHce4RCNXD3RsDKefMvu6QSPVI0gI47u9likveI8I3Svm0iLw0Iyqk6fYhWZb6bTIgctVQ4MqV5mWWCFWZyu9Cz2b9xJWBCdBsUH2SxCneWaZjc1vRuZDRkr8LmsDq0y3Wk++0DqkXm9qjj9h3ldy1yvp/rOuCjP2VmB1Rf2qwkO85/YOge5BY2ZXaafhYh6zF5vH76JqWl/I8EtsXVrWChCn3bXO4r6cpvWUvuUkB01MZ99Tdv9L3PeU/1LJv9RTrlGrs7PZNeq4jqroXURLizmwuD/GMgIrrAOtO1UPO4D//oSPPNep6luPy7ZniPcpjjW6eU9aoz+9Z70CqEHvh5IJAAA=
+(Assembly=$(1c40913f-fc1d-459d-9749-ab74b8932ca5.OutputPathUri) Namespace=DemoDCProject.DomainLayer.Exceptions Type=BillingAccountNotFoundException ObjectInstance="Object instance 9")
+BillingAccountNotFoundException : BillingAccountNotFoundException
+</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="9b44bd18-6b97-4406-a767-a5c1358d654c" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="7ed128a8-f951-45ca-9601-4cde866c9de1" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="de698be0-cd0a-4d56-b203-a93616ca1bde" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="94cacad5-7052-4dc2-ad53-831a1f831338" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="c98c86ee-67ec-4276-ae11-55e810341659" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="e30f6596-2ed1-4a52-9398-7104cf84398e" name="Throw" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false" signatureText="throw new BillingAccountNotFoundException()">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="b0ebe933-4d45-4eef-a742-cef4abe6388c" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="f5513873-a5c2-4737-a437-8bb5d700d6a1" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="55b86ae5-c007-4b37-b5c4-c5ee974b6cb5" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="12d24878-284b-4995-8f45-32721d14cdaf" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="8bb9a335-bc00-4e02-9eb0-fe8131c12ef1" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="b45343be-f9af-485f-8702-324992aeec42" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="22c36844-9f31-49cd-8eb8-4d135a027ebb" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="4217a60b-7955-4edc-a5d5-59e313bd6389" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="d5a56262-57fb-4ff8-8a8e-e88bc6067f4e" name="Return" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false" signatureText="return await this.DomainFacade.RetrieveBillingAccountDetailByPolicyId(policyNumber)">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="caa85e17-9306-4578-b03f-edb191babd0c" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="b106c01e-19c3-4929-8e4b-845046e3e3ea" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="bd4787b2-1a5a-4bca-b6b4-8d1623e6b98d" name="ConstructHttpResponseException" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="ConstructHttpResponseException(string.Format(&quot;PolicyNumber: {0}&quot;, policyNumber), ex)">
+            <referencesInternal>
+              <reference Id="27e232ae-9fb7-43a0-a769-782f35231ee4" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=DemoDCProject.Controllers)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(00c038c0-71ee-40e0-a6ad-d987dc156f05.OutputPathUri)&amp;quot; Namespace=DemoDCProject.Controllers Type=ApiControllerBase)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(00c038c0-71ee-40e0-a6ad-d987dc156f05.OutputPathUri)&amp;quot; Namespace=DemoDCProject.Controllers Type=ApiControllerBase Member=(Name=ConstructHttpResponseException OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=String),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&amp;quot; Namespace=System Type=Exception)]))&quot;)" tag="DGQL" />
+              <reference Id="72c47f64-9ca8-4036-9ac8-bbd5a9657ef0" handle="(Assembly=&quot;$(00c038c0-71ee-40e0-a6ad-d987dc156f05.OutputPathUri)&quot; Namespace=DemoDCProject.Controllers Type=ApiControllerBase Member=(Name=ConstructHttpResponseException OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=String),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5/mscorlib.dll&quot; Namespace=System Type=Exception)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="630e4da9-8838-4f1a-97ba-c87976be542b" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="42e9d5ca-14fa-4f75-9080-718015841b0e" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="2b7cfeaf-ec62-41e9-8e38-405f68a8f369" name="Throw" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false" signatureText="throw ConstructHttpResponseException(string.Format(&quot;PolicyNumber: {0}&quot;, policyNumber), ex)">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="4fc9b78b-51db-4466-98e4-f995748cf59a" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="b042edcb-7fce-4b9a-876d-35fd0d18c517" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="1f42c7e3-2935-403b-8bee-0d8114ed8518" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="d6c9bdca-d7a3-4b8d-be18-7da16b2d291c" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="f7caf211-3600-4d05-9a28-0021a74b3fb3" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="2c229a13-37b0-46dc-ba9c-7dcd4016f91d" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3afe0ffb-e976-48f3-94d0-e52882e095ab" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="73706f9d-69e0-4372-93c1-b1fd96968149" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="231a47b5-868b-44b6-930c-6a934a2e541c" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="2995e88e-358f-4eac-becc-4f318cde90fb" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="655eb70b-b5a8-4558-bcf8-e8809e6ab8b4" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="b05ee3de-f2a8-4219-b7b7-9e6fd01a0a59" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="1fc14e96-8872-4a22-b11c-07cdf816df50" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="b5634aa7-2c7e-4ca2-b466-2c237d956f04" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="2036cf34-3ea1-4d36-9af3-deb0f8e3f908" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="fd8c1974-0522-4a72-bbdf-e15f8838a1dc" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="d772221f-ccd3-4e84-8fc4-db8cbdff5c12" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="652e7b10-e2da-48b7-9add-2a5027c4b848" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="a279d674-312a-4bf3-8912-c42ee8b9f43c" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="e70a58d5-0a36-4fe4-923e-77d8d891e870" name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+</SequenceDesignerModel>

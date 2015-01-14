@@ -78,6 +78,7 @@ namespace DemoDCProject.Controllers
                 httpStatusCode = HttpStatusCode.InternalServerError;
                 responseBody = actualException.StackTrace;
                 this.logger.ErrorFormat("Exception Caught in Controller::  {0} {1}", actualException, requestMessageToLog);
+
             }
 
           

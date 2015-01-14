@@ -24,6 +24,7 @@ namespace DemoDCProject.Testing.Shared.ServiceLocator
         public Func<PaymentGatewayBase> PaymentGatewayFactory = null;
         public Func<TokenDataManagerBase> TokenDataManagerFactory = null;
         public Func<BillingGatewayBase> BillingGatewayFactory = null;
+        public Func<LogProviderBase> LogProviderFactory = null;
 
         private static Exception CreateFactoryNotInitializedException(string factoryName, string baseClassName)
         {
@@ -85,7 +86,13 @@ namespace DemoDCProject.Testing.Shared.ServiceLocator
             return dbConnection;
         }
 
+        protected override LogProviderBase CreateLogProviderCore()
+        {
+            if (LogProviderFactory == null)
+                throw CreateFactoryNotInitializedException("LogProviderFactory", "LogProviderBase");
+            return LogProviderFactory();
 
+        }
         protected override TokenDataManagerBase CreateTokenDataManagerCore()
         {
             if (TokenDataManagerFactory == null)

@@ -22,5 +22,11 @@ namespace DemoDCProject.DomainLayer.Managers.DataLayer.DataManagers
         {
             return ExecuteNonQueryUsingTransactionAndReturnValue<Token, int>(dbConnection, CommandFactoryForTokenDataManager.CreateCommandForCreateToken, token);
         }
+
+        protected override void DeleteTokenWithTokenNumberCore(string tokenNumber)
+        {
+            ExecuteNonQueryUsingTransaction<string>(dbConnection, CommandFactoryForTokenDataManager.CreateCommandForDeleteTokenWithTokenNumber, tokenNumber);
+
+        }
     }
 }

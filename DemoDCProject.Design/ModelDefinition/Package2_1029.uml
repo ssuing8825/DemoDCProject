@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a98d6fb4-6292-40c3-a56e-31d26b677eb7"
+  name="ServiceLocator"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="350b1113-5f54-4340-9901-bb017cca5cb6"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DDemoDCProject.DomainLayer.ServiceLocator"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="2c5ddf34-4adb-4b71-81c1-fe3ba2fc8c2a"
+        name="ServiceLocatorBase"
+        visibility="Package"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="31d9a30a-f384-4f96-87c0-072534c102e7"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.ServiceLocator Type%3DServiceLocatorBase"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7120b7fb-78c8-4681-9f30-eea31fff7938"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7ae91b55-57e6-460a-972e-687cb45c3c89">
+                <propertyInstance
+                  Id="9c89a598-7dfb-4aa0-8cc8-678581d2f1fc"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f886ca92-9c90-4b37-8ded-4fc1e35b2d9e">
+                <propertyInstance
+                  Id="122779af-3cea-4602-860c-1ca9c456e189"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="45d31cc0-657b-4921-bc46-206f857b9ab2">
+                <propertyInstance
+                  Id="590d7f6c-16ab-4844-aa30-4d4e0fe58751"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="88b6beb1-6870-4b14-a2b7-ee26438ffa66">
+                <propertyInstance
+                  Id="53411aeb-1139-438a-948a-d0f21f85dc22"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3348388a-bd58-4e06-ab88-bd9b4fcaa21c">
+                <propertyInstance
+                  Id="7afcb947-309d-4c24-b8e9-ba66ede64998"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

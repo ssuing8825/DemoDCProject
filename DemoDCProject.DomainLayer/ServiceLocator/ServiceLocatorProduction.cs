@@ -74,5 +74,10 @@ namespace DemoDCProject.DomainLayer.ServiceLocator
         {
             return new BillingAccountManager(this);
         }
+
+        protected override LogProviderBase CreateLogProviderCore()
+        {
+            return new LogProviderLogFourNet();
+        }
     }
 }

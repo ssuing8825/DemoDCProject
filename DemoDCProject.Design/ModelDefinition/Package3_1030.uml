@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="c905e43d-baee-4755-a0f6-2de55220c42a"
+  name="Extensions"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="b9d10ee0-aca2-4a6c-a1f7-c4d79ec3238c"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="0de6f59d-d355-49ef-89ef-4efa007d03ec"
+        name="DbCommandExtensions"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9c9442e8-c332-41f5-824a-e3d344ec75c2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9fa44255-2dde-4e6e-87d1-149ef580a024"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="55b607ee-1133-44cb-b94a-3114f54fa87f">
+                <propertyInstance
+                  Id="7649606e-20d2-42f6-9edd-5b8eab425488"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="57c3c8d2-e293-4dac-a2db-9de4b889557e">
+                <propertyInstance
+                  Id="666adb6f-c398-48b4-9ee0-2d95bcdc5b25"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d145d761-353d-4527-a918-64f3597089d3">
+                <propertyInstance
+                  Id="3dc90e43-16aa-43ad-95ec-6952accb92e1"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8953cb1e-3708-4b3a-82e3-68804c1032b8">
+                <propertyInstance
+                  Id="5c73cda9-17c7-4c2c-a668-71cd5c3fab97"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef7f9428-5293-4aeb-8e7c-518204bd1276">
+                <propertyInstance
+                  Id="093b39ba-24d3-47c2-a03f-c87931e118e5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="32d42934-3be0-4506-b076-8b2434ecbb1d"
+            name="InitializeCommandParameter"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a88fed02-c3c9-456b-b2a9-217562f9ee8a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DInitializeCommandParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DParameterDirection)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="59c24435-d4c6-4426-84e5-9799c12dbe44"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a012cc2-c2bc-4fd9-9732-245d5f23832b">
+                    <propertyInstance
+                      Id="e34451c1-6b62-4bbb-81ae-804db2007a34"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="621a2d0e-0309-4320-82e2-5d980268f633">
+                    <propertyInstance
+                      Id="c67b81a7-4e7f-4871-ac59-40e0eaae1c94"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a0e4028-2ae5-4722-9f5a-d3dcd512ef3b">
+                    <propertyInstance
+                      Id="75aa5e63-0db3-4fc2-9148-a4b743eb0b53"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5f2cb3f-a3be-40d2-8fff-f08eb59ef871">
+                    <propertyInstance
+                      Id="06bab825-bb2d-475b-9539-00fbba2cc879"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39dd5694-b502-40b9-9593-87f8fc6b7bec">
+                    <propertyInstance
+                      Id="706bb5b8-52de-4497-a61d-b28d5c89164d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f3d499f-8987-4fd3-b927-b562174ce4e4">
+                    <propertyInstance
+                      Id="b7854687-4424-43f5-8529-02806af66412"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4e0cdbd6-9f79-4f40-ac55-1a736aa724fe"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="91e5a5e2-a44b-403e-b093-31fb375600c1"
+                      LastKnownName="DbParameter"
+                      LastKnownLocation="Package1_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bf8015d7-025d-4ba8-a2da-22ac030098ec"
+                  name="dbCommand"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="25bedbce-0a87-4e1c-94eb-29f9455d0853"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DInitializeCommandParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DParameterDirection)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DdbCommand"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b450d06d-4166-4b0d-9053-b4a6b02a0d95"
+                      LastKnownName="DbCommand"
+                      LastKnownLocation="Package1_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="97a44b4d-7e45-46be-bd7d-27a8e9cc2004"
+                  name="dbType"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="470fc224-9587-4304-82ee-5d0b59e3e004"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DInitializeCommandParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DParameterDirection)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DdbType"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="7d04084a-e7d7-433f-87a0-b8402527ab01"
+                      LastKnownName="DbType"
+                      LastKnownLocation="Package_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0ad61d5f-09c2-4df5-8fff-3887f48cb1a7"
+                  name="parameterDirection"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3f9def4b-bbba-48e8-a037-d09eae4c0dc2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DInitializeCommandParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DParameterDirection)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DparameterDirection"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="866a320b-e062-4d5d-8bea-7e6d47d53cea"
+                      LastKnownName="ParameterDirection"
+                      LastKnownLocation="Package_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e8468449-242f-4a3c-b643-29df0962dfed"
+                  name="parameterName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="dc980ccb-e78c-40e7-a160-9400049241e3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DInitializeCommandParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DParameterDirection)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DparameterName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="DemoDCProject.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fe4df9b7-b792-45a3-a99a-3142c0ea79bd"
+                  name="value"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="076d9f15-f18a-45c2-a015-887001d0c06c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DInitializeCommandParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DParameterDirection)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dvalue"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b1b78e80-2655-47da-92ca-e5cd392be444"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_0917.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5dd6c4ce-2d09-41e0-811c-5789fa326396"
+            name="AddReturnParameter"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cc6ff8be-b14b-4c22-8459-f17d23bd86ad"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DAddReturnParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="63a7e790-d064-47f5-854d-05a308aeb901"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30a75edb-00c2-4bc6-826b-5b9f352f392e">
+                    <propertyInstance
+                      Id="31a4fd01-e41a-4acf-8391-9f04eeffad1c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1486dbf7-b5d0-431c-b4ed-47124f687f36">
+                    <propertyInstance
+                      Id="a23b26f7-58ed-4fcb-b932-adb35796a715"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b94351f7-2a61-4e75-9f50-2f0d55c4e8ea">
+                    <propertyInstance
+                      Id="88b6b069-afd8-4773-9ba0-5687cfb22695"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="488c69fc-eb8b-4a14-a882-aff7026d00c3">
+                    <propertyInstance
+                      Id="91d757ab-d2b4-443b-8cfd-51963538589f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6d6273f-79d8-4020-9772-ecc4c532a18f">
+                    <propertyInstance
+                      Id="363c9bdf-c8ff-49c5-96dd-acfb3b24369e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5603c889-8741-4cf2-a090-6a9be2635329">
+                    <propertyInstance
+                      Id="da67b562-5c27-46d3-b4fd-0415cd9e4a2c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f0feb1d6-1c22-439a-b171-9c6b0db7032c"
+                  name="dbCommand"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="dc434196-30f2-409d-894a-a0476ece8951"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DAddReturnParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)]) ParameterIdentifier%3DdbCommand"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b450d06d-4166-4b0d-9053-b4a6b02a0d95"
+                      LastKnownName="DbCommand"
+                      LastKnownLocation="Package1_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f459e73d-adb1-4334-89aa-83b92d24b955"
+            name="AddParameter"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="331e6b19-0c0c-4385-ba0f-7abccd9732c2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DAddParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="77ed0af7-61be-4fad-b384-9a8354ed22c8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="baac808d-cddb-4882-a1ad-2912c190c564">
+                    <propertyInstance
+                      Id="09bf577e-93dc-43e1-9c48-3037eaf1cf25"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0231616-c187-457f-aed7-51f3d093e419">
+                    <propertyInstance
+                      Id="2c90e99b-3a34-4a40-892a-bfd3019fb967"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78c167fe-bd28-4505-85d6-b5e9859e44ab">
+                    <propertyInstance
+                      Id="aa61f7f7-0b57-45dd-9742-6ca7f2027f06"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46b932eb-eab2-4d92-802d-a08372e83aad">
+                    <propertyInstance
+                      Id="44299369-04c8-4573-8a8a-a2680715e242"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65352398-d17d-4dde-a72b-06e0efdeace3">
+                    <propertyInstance
+                      Id="3c9f3c2d-6221-472e-abba-abae6107ac79"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96162f21-d8c0-4981-892d-7c6c2cfdf3db">
+                    <propertyInstance
+                      Id="a61565b3-a850-44de-a107-0ff63de3afbf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3ece8fe2-c6f3-4739-87cf-9e9387bab0a0"
+                  name="dbCommand"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4afe1a72-cdc9-4adf-8ba9-ba36b14002b7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DAddParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DdbCommand"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b450d06d-4166-4b0d-9053-b4a6b02a0d95"
+                      LastKnownName="DbCommand"
+                      LastKnownLocation="Package1_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="38711cc5-411e-4195-8cd2-4555b2b4132f"
+                  name="dbType"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8df243b1-84fb-4d0f-90b3-226799ff0825"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DAddParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DdbType"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="7d04084a-e7d7-433f-87a0-b8402527ab01"
+                      LastKnownName="DbType"
+                      LastKnownLocation="Package_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="49162510-4494-4067-812a-3f576b66103b"
+                  name="parameterName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5420df31-1e55-4f15-943a-fe57f914707a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DAddParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DparameterName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="DemoDCProject.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="74de8754-cf5f-4a50-b216-6cec9ec6d399"
+                  name="value"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f80f584c-305c-4892-a0c4-19893c646615"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DAddParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dvalue"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b1b78e80-2655-47da-92ca-e5cd392be444"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_0917.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2180c627-cab9-4274-b5d4-f4d03e33d0ab"
+            name="AddParameter"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0ce06b11-74e1-43dd-93e2-32c279d1fb88"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DAddParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="783451d0-23b5-4c5d-a0da-8d206d3ee2a1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d10d7d0-4ffd-4096-aab2-19ca24104353">
+                    <propertyInstance
+                      Id="4553028d-35ab-4270-b0a6-a1e93f25f8e8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db4083c3-c019-4068-9f42-6bad18fef89e">
+                    <propertyInstance
+                      Id="21f4ff62-d085-4498-9b29-371fd5685abb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b828912-af29-437c-8c4e-1dfad9a63a5b">
+                    <propertyInstance
+                      Id="e126b3c0-96a0-41aa-ae72-8a3b0b71d730"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2f89800-a887-4c00-a86f-26824763cab8">
+                    <propertyInstance
+                      Id="0f9a8eb6-04b3-409c-89de-5da5118e7a68"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ccab3da-e620-439c-bbc7-f01bc295041d">
+                    <propertyInstance
+                      Id="178aa09e-d94f-4759-9ebd-afb1c4df615d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b735f9f7-fb70-440c-a661-4879cbc365e9">
+                    <propertyInstance
+                      Id="518eadcd-ab2f-401d-905f-ed6468ead21a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="22455fad-deac-47dd-b8ff-dc97cad26fb1"
+                  name="dbCommand"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8bfe0b91-d366-45d3-aa42-c48bce34da04"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DAddParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DdbCommand"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b450d06d-4166-4b0d-9053-b4a6b02a0d95"
+                      LastKnownName="DbCommand"
+                      LastKnownLocation="Package1_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a5c73b08-91eb-4072-b875-3ce817ef092f"
+                  name="dbType"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="488fd5e1-9ddc-4462-bde0-9a1d4b67b801"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DAddParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DdbType"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="7d04084a-e7d7-433f-87a0-b8402527ab01"
+                      LastKnownName="DbType"
+                      LastKnownLocation="Package_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4c23a284-b295-4e92-91c8-d0e7f1746baf"
+                  name="parameterName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e4879f5c-6b43-4fb6-8119-6a2930b52d0d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DAddParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DparameterName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="DemoDCProject.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9dab5dbb-1bb9-43ab-a7c5-4ef7c6d7d8c3"
+                  name="value"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8791b63b-c463-4980-abe3-8ce7414cf6bd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DAddParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dvalue"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b1b78e80-2655-47da-92ca-e5cd392be444"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_0917.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a23f7fae-a204-40dc-8e03-3ee16aac2c53"
+                  name="size"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9edc5c49-5087-4ea7-a40c-5cff4a5827d1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.Extensions Type%3DDbCommandExtensions Member%3D(Name%3DAddParameter OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbCommand)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data Type%3DDbType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dsize"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="DemoDCProject.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

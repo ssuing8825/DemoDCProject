@@ -24,7 +24,7 @@ namespace DemoDCProject.IntegrationTests
 
         [TestMethod]
         [TestCategory("End-to-End Integration Test")]
-        public void RetrieveBillingAccountUsingPolicyNumber_ShouldSucceed()
+        public void DomainFacade_RetrieveBillingAccountUsingPolicyNumber_ShouldSucceed()
         {
             // Arrange
             // Nothing to arrange here. Fake is already set.
@@ -39,7 +39,7 @@ namespace DemoDCProject.IntegrationTests
         [TestMethod]
         [TestCategory("End-to-End Integration Test")]
         [ExpectedException(typeof(BillingAccountNotFoundException))]
-        public async Task RetrieveBillingAccountUsingPolicyNumber_PolicyIdNotFound()
+        public async Task DomainFacade_RetrieveBillingAccountUsingPolicyNumber_PolicyIdNotFound()
         {
             // Arrange
             // Nothing to arrange here. Fake is already set.

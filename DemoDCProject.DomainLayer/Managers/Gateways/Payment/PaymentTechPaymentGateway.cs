@@ -21,7 +21,7 @@ namespace DemoDCProject.DomainLayer.Managers.Gateways.Payment
         {
             this.serviceLocator = serviceLocator;
           }
-        protected override string StoreCreditCardAtTokenProvidersCore(string creditCard, string expirationDate)
+        protected override string StoreCreditCardAtTokenProvidersCore(string creditCard, int expirationMonth, int expirationYear)
         {
             //This is where the real work of calling paymenttech would go.
             //ConfigurationProvider.PaymentechUrl

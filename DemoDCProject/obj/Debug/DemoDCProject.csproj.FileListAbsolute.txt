@@ -40,7 +40,6 @@ C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\XmlDocument.xml
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\DemoDCProject.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\DemoDCProject.pdb
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\Antlr3.Runtime.dll
-C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\DemoDCProject.Core.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\DemoDCProject.DomainLayer.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\Newtonsoft.Json.dll
@@ -55,7 +54,6 @@ C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\System.Web.WebP
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\System.Web.WebPages.Razor.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\WebGrease.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\DemoDCProject.ServiceProviders.dll
-C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\DemoDCProject.Core.pdb
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\DemoDCProject.DomainLayer.pdb
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\Antlr3.Runtime.pdb
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject\bin\Newtonsoft.Json.xml

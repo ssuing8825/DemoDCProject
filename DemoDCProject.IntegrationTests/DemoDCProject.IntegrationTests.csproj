@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="DemoDCProject.DomainLayer\DomainFacade_BillingFunctions.cs" />
     <Compile Include="DemoDCProject.DomainLayer\DomainFacade_PaymentFunctions.cs" />
+    <Compile Include="DemoDCProject.DomainLayer\Managers\DataLayer\DataManager\TokenDataManagerTests.cs" />
     <Compile Include="DemoDCProject.DomainLayer\Managers\Gateways\BillingGatewayTests.cs" />
     <Compile Include="DemoDCProject.DomainLayer\TestHelpers\ServiceLocatorConfigurator.cs" />
     <Compile Include="EndToEndIntegrationTestsBase.cs" />

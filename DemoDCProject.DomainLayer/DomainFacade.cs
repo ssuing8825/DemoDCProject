@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace DemoDCProject.DomainLayer
 {
 
-    public sealed partial class DomainFacade
+    public sealed partial class DomainFacade : IDomainFacade
     {
         private readonly ServiceLocatorBase serviceLocator;
 

@@ -9,18 +9,18 @@ namespace DemoDCProject.DomainLayer.Managers.Gateways.Payment
 {
     internal abstract class PaymentGatewayBase
     {
-        public string StoreCreditCardAtTokenProviders(string creditCard, string expirationDate)
+        public string StoreCreditCardAtTokenProviders(string creditCard, int expirationMonth, int expirationYear)
         {
-            ValidateTokenInformation(creditCard, expirationDate);
-            return StoreCreditCardAtTokenProvidersCore(creditCard, expirationDate);
+            ValidateTokenInformation(creditCard, expirationMonth, expirationYear);
+            return StoreCreditCardAtTokenProvidersCore(creditCard, expirationMonth, expirationYear);
         }
 
-        protected abstract string StoreCreditCardAtTokenProvidersCore(string creditCard, string expirationDate);
+        protected abstract string StoreCreditCardAtTokenProvidersCore(string creditCard, int expirationMonth, int expirationYear);
 
-        private static void ValidateTokenInformation(string creditCard, string expirationDate)
+        private static void ValidateTokenInformation(string creditCard, int expirationMonth, int expirationYear)
         {
             Ensure(!string.IsNullOrEmpty(creditCard), "The creditCard property can not be null or empty");
-            Ensure(!string.IsNullOrEmpty(expirationDate), "The expirationDate property can not be null or empty");
+            Ensure(!(expirationMonth == 0), "The expirationDate property can not be null or empty");
 
         }
         private static void Ensure(bool condition, string exceptionMessage)

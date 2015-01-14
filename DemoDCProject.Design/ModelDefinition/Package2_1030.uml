@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d5443d25-6cb3-416f-9b88-95898301c29b"
+  name="CommandFactories"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="0de6e57b-f811-4854-825d-b3b3c086cea0"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.DataManagers.CommandFactories"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="614150be-651f-4406-9797-2c1bf91eaf82"
+        name="CommandFactoryForTokenDataManager"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="759e7261-1770-42cf-be1f-7541d0f7fa33"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.DataManagers.CommandFactories Type%3DCommandFactoryForTokenDataManager"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4db83f6d-43e5-4f30-8dea-f19180f71911"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="38bf372c-10d3-444e-85b9-a62801353de9">
+                <propertyInstance
+                  Id="fb5e5bfb-6036-4234-a36e-ef4a466fc36f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="da90af8b-8d87-497f-9596-331e9977fd24">
+                <propertyInstance
+                  Id="7cd8e970-df8e-4adf-bdbc-d86c8b60d0ae"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="872cff89-8ded-41fa-929c-38e78d1595ab">
+                <propertyInstance
+                  Id="f4e06cb9-5d8f-4309-a76d-0446474df2f5"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0ae1ae7f-ef86-45d8-98ff-efc3d99ba071">
+                <propertyInstance
+                  Id="de800938-a666-4075-8ad0-1533a04bd664"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="36e23b0b-7253-4288-a82d-51c4401c952f">
+                <propertyInstance
+                  Id="1ea71199-7a18-4153-9fa1-e761fd5f1188"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="37efc727-b7d3-4398-a6a7-e18da8208bee"
+            name="CreateCommandForCreateToken"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="21a08402-ed76-4d02-b1ed-2ca045407379"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.DataManagers.CommandFactories Type%3DCommandFactoryForTokenDataManager Member%3D(Name%3DCreateCommandForCreateToken OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbConnection)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.InternalDto Type%3DToken)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="027d7be1-055e-464f-9c10-6dc8ab6dac37"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22a209d4-894f-41f2-95ef-c7d5b3a70677">
+                    <propertyInstance
+                      Id="993a9255-a66d-42f5-bcd3-bc4e4000e53c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57323a36-9f10-4a23-aa6f-4bbb3da409d1">
+                    <propertyInstance
+                      Id="27c53820-fbfa-4506-86bf-5cb962b2cb16"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0eb8704-f9b9-41c5-8d2a-869eaebc368a">
+                    <propertyInstance
+                      Id="385e9f76-4d78-4f96-aba3-dbf1955e9f90"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eefc3d9c-0ebf-4a3f-adf9-8ac614dd1046">
+                    <propertyInstance
+                      Id="409a4deb-3fbe-4b7a-aac2-ae32fcae460b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="017cec6b-181f-4fbc-8e42-6e043efcb44f">
+                    <propertyInstance
+                      Id="147d2a40-7e52-454e-83b0-d5c2d14c9905"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d141ae6e-d439-4d83-a28d-6ebad1ff4fca">
+                    <propertyInstance
+                      Id="cf2a6217-4e02-43f0-bff2-d2c556518f0d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fcf775c2-67f3-4db5-8e1f-90b9104edc09"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b450d06d-4166-4b0d-9053-b4a6b02a0d95"
+                      LastKnownName="DbCommand"
+                      LastKnownLocation="Package1_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="79ccb346-edef-44d1-8552-b630c6224e97"
+                  name="dbConnection"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4d30bcdb-786b-4170-95ee-8c566a368338"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.DataManagers.CommandFactories Type%3DCommandFactoryForTokenDataManager Member%3D(Name%3DCreateCommandForCreateToken OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbConnection)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.InternalDto Type%3DToken)]) ParameterIdentifier%3DdbConnection"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="10c49129-4c37-43a6-b8a9-98d8aa08a6a6"
+                      LastKnownName="DbConnection"
+                      LastKnownLocation="Package1_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cc895148-0119-4e49-95f3-bd9122b22322"
+                  name="token"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="83915848-dc83-41af-aaa9-9d66682c1c39"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.DataManagers.CommandFactories Type%3DCommandFactoryForTokenDataManager Member%3D(Name%3DCreateCommandForCreateToken OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbConnection)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.InternalDto Type%3DToken)]) ParameterIdentifier%3Dtoken"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0f6cc3aa-6ffe-42ff-bcba-fc41a1970dff"
+                      LastKnownName="Token"
+                      LastKnownLocation="Package3_1029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f8537197-fef2-4020-900c-68b10b10f9aa"
+            name="CreateCommandForDeleteTokenWithTokenNumber"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="711145ab-0234-4b44-840d-f3e4d79c767c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.DataManagers.CommandFactories Type%3DCommandFactoryForTokenDataManager Member%3D(Name%3DCreateCommandForDeleteTokenWithTokenNumber OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbConnection)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="74d06b9e-e03c-4c76-8740-bdfc9308f2c9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84932c3f-363e-4e39-ac53-f0efb89aca9b">
+                    <propertyInstance
+                      Id="f6090b0d-e283-445e-b150-7bcd3baf2fdf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eaf3e65c-32b6-4cb3-a6f6-1c48f6fe3422">
+                    <propertyInstance
+                      Id="1c0501cc-1d10-4a1a-9e4d-32b5bbd6b625"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1fc407e4-7c04-4a9b-81b1-98501c1bcbe6">
+                    <propertyInstance
+                      Id="82c99e40-78f1-4919-958c-7534455d7954"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a62ad15-2b89-4ec9-946a-c9535d09e7c4">
+                    <propertyInstance
+                      Id="8f2f745e-b99e-47de-b8b9-f696a47a2424"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26823721-4f5b-4b68-a1d3-f80ae4d37fd0">
+                    <propertyInstance
+                      Id="214dd296-d7ea-44b9-a697-b4117106f330"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6253368-3986-4d81-a90a-7ed8d12a5ca9">
+                    <propertyInstance
+                      Id="24c38645-2ce5-465d-822c-305bca30aa9b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="844b166f-5db1-4f3d-b994-78d8ef50ae28"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b450d06d-4166-4b0d-9053-b4a6b02a0d95"
+                      LastKnownName="DbCommand"
+                      LastKnownLocation="Package1_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="16bd4e98-47c2-4eee-9eb2-fffacd581111"
+                  name="dbConnection"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="208e42eb-4bcd-4300-834c-c21133f6a032"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.DataManagers.CommandFactories Type%3DCommandFactoryForTokenDataManager Member%3D(Name%3DCreateCommandForDeleteTokenWithTokenNumber OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbConnection)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DdbConnection"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="10c49129-4c37-43a6-b8a9-98d8aa08a6a6"
+                      LastKnownName="DbConnection"
+                      LastKnownLocation="Package1_1030.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ac2b7275-4bcc-4d04-a47a-d56b5387480e"
+                  name="tokenNumber"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="23f54894-e6b6-4ffe-84ff-ea3e20b8dd79"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer.DataManagers.CommandFactories Type%3DCommandFactoryForTokenDataManager Member%3D(Name%3DCreateCommandForDeleteTokenWithTokenNumber OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.Common Type%3DDbConnection)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DtokenNumber"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="DemoDCProject.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

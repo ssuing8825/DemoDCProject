@@ -2,3 +2,6 @@ C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.ServiceProviders\bi
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.ServiceProviders\bin\Debug\DemoDCProject.ServiceProviders.pdb
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.ServiceProviders\obj\Debug\DemoDCProject.ServiceProviders.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.ServiceProviders\obj\Debug\DemoDCProject.ServiceProviders.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.ServiceProviders\obj\Debug\DemoDCProject.ServiceProviders.csprojResolveAssemblyReference.cache
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.ServiceProviders\bin\Debug\log4net.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.ServiceProviders\bin\Debug\log4net.xml

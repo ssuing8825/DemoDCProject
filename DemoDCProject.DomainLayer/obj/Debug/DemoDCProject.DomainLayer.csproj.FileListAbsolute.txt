@@ -9,3 +9,5 @@ C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\bin\Deb
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\obj\Debug\DemoDCProject.DomainLayer.csprojResolveAssemblyReference.cache
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\obj\Debug\DemoDCProject.DomainLayer.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\obj\Debug\DemoDCProject.DomainLayer.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\bin\Debug\log4net.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.DomainLayer\bin\Debug\log4net.xml

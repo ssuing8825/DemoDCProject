@@ -10,7 +10,7 @@ namespace DemoDCProject.DomainLayer.Exceptions
 {
     [ExcludeFromCodeCoverage]
     [Serializable]
-    public sealed class ServiceLocatorConfigurationInvalidException : Exception
+    public sealed class ServiceLocatorConfigurationInvalidException : DemoDCProjectTechnicalException
     {
         public ServiceLocatorConfigurationInvalidException() { }
         public ServiceLocatorConfigurationInvalidException(string message) : base(message) { }

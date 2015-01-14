@@ -27,6 +27,8 @@ namespace DemoDCProject.DomainLayer.Managers
         {
             return await BillingGateway.RetrieveBillingAccountsByPolicyId(policyId);
         }
+       
+        
         public async Task<BillingAccountDetail> RetrieveBillingAccountDetailForPolicyId(int policyId)
         {
             var result = await BillingGateway.RetrieveBillingAccountDetailByAccountId(policyId);

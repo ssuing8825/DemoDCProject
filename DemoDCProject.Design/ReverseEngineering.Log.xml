@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject' -  (Package)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer' -  (Package)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers' -  (Package)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer' -  (Package)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions' -  (Package)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Medium" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions' -  (Class)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::AddParameter' -  (Operation)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::AddParameter::dbCommand' -  (Parameter)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::AddParameter::dbType' -  (Parameter)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::AddParameter::parameterName' -  (Parameter)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::AddParameter::size' -  (Parameter)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::AddParameter::value' -  (Parameter)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::AddReturnParameter' -  (Operation)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::AddReturnParameter::dbCommand' -  (Parameter)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::InitializeCommandParameter' -  (Operation)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::InitializeCommandParameter::dbCommand' -  (Parameter)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::InitializeCommandParameter::dbType' -  (Parameter)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::InitializeCommandParameter::parameterDirection' -  (Parameter)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::InitializeCommandParameter::parameterName' -  (Parameter)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::DemoDCProject::DomainLayer::Managers::DataLayer::Extensions::DbCommandExtensions::InitializeCommandParameter::value' -  (Parameter)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::System' -  (Package)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::System::Data' -  (Package)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::System::Data::Common' -  (Package)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::System::Data::Common::DbCommand' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::System::Data::Common::DbParameter' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::System::Data::DbType' -  (Enumeration)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::System::Data::ParameterDirection' -  (Enumeration)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'DemoDCProject.Design::System::Object' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="High" Text="(5) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-01-12T10:30:16" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

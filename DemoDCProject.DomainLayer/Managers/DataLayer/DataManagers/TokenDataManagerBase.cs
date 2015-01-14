@@ -13,7 +13,15 @@ namespace DemoDCProject.DomainLayer.Managers.DataLayer.DataManagers
         {
             return CreateTokenCore(token);
         }
+        public void DeleteTokenWithTokenNumber(string tokenNumber)
+        {
+            DeleteTokenWithTokenNumberCore(tokenNumber);
+        }
+
+        protected abstract void DeleteTokenWithTokenNumberCore(string tokenNumber);
+
 
         protected abstract int CreateTokenCore(Token token);
+
     }
 }

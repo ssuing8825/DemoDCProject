@@ -1,0 +1,7 @@
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Design\bin\Debug\DemoDCProject.DomainLayer.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Design\bin\Debug\DemoDCProject.ServiceProviders.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Design\bin\Debug\DemoDCProject.DomainLayer.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Design\bin\Debug\DemoDCProject.ServiceProviders.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Design\obj\Debug\DemoDCProject.Design.modelprojResolveAssemblyReference.cache
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Design\bin\Debug\log4net.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Design\bin\Debug\log4net.xml

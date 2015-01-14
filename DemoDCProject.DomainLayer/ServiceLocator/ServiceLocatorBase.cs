@@ -40,56 +40,56 @@ namespace DemoDCProject.DomainLayer.ServiceLocator
         {
             return CreateTokenGeneratorCore();
         }
+
         public TokenDataManagerBase CreateTokenDataManager()
         {
             return CreateTokenDataManagerCore();
         }
-
-        protected abstract TokenDataManagerBase CreateTokenDataManagerCore();
-
-        protected abstract TokenGeneratorBase CreateTokenGeneratorCore();
-        protected abstract ConfigurationProviderBase CreateConfigurationProviderCore();
-
+             
         public PaymentGatewayBase CreatePaymentGateway()
         {
             return CreatePaymentGatewayCore();
         }
-
-        protected abstract PaymentGatewayBase CreatePaymentGatewayCore();
-
+             
         public DbConnection CreateDbConnection(string connectionStringName)
         {
             return CreateDbConnectionCore(connectionStringName);
         }
-
-        protected abstract DbConnection CreateDbConnectionCore(string connectionStringName);
-
+              
         public PaymentManager CreatePaymentManager()
         {
             return CreatePaymentManagerCore();
         }
-        protected abstract PaymentManager CreatePaymentManagerCore();
-
-
+             
         public BillingAccountManager CreateBillingAccountManager()
         {
             return CreateBillingAccountManagerCore();
         }
-        protected abstract BillingAccountManager CreateBillingAccountManagerCore();
-
-
-
+               
         public DataFacade CreateDataFacade()
         {
             return CreateDataFacadeCore();
         }
-        protected abstract DataFacade CreateDataFacadeCore();
 
         public BillingGatewayBase CreateBillingGateway()
         {
             return CreateBillingGatewayCore();
         }
-        protected abstract BillingGatewayBase CreateBillingGatewayCore();
 
+        public LogProviderBase CreateLogProvider()
+        {
+            return CreateLogProviderCore();
+
+        }
+        protected abstract DataFacade CreateDataFacadeCore();
+        protected abstract BillingGatewayBase CreateBillingGatewayCore();
+        protected abstract PaymentGatewayBase CreatePaymentGatewayCore();
+        protected abstract DbConnection CreateDbConnectionCore(string connectionStringName);
+        protected abstract PaymentManager CreatePaymentManagerCore();
+        protected abstract BillingAccountManager CreateBillingAccountManagerCore();
+        protected abstract TokenDataManagerBase CreateTokenDataManagerCore();
+        protected abstract TokenGeneratorBase CreateTokenGeneratorCore();
+        protected abstract ConfigurationProviderBase CreateConfigurationProviderCore();
+        protected abstract LogProviderBase CreateLogProviderCore();
     }
 }

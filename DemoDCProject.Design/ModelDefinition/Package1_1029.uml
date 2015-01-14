@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a7f88cb6-e400-48fb-9aa1-588e8c3b1c72"
+  name="DataLayer"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="235a1447-5972-4413-8887-dbc24399c3d8"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="732ff799-537b-46f0-8572-76a1b818d3a8"
+        name="DataFacade"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="55f5cd40-087c-4568-8884-1d26f2328220"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer Type%3DDataFacade"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2cd4acc3-6cdf-464d-9645-430904fd04c4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ed77532-8793-4338-a0c3-6a654b0703e8">
+                <propertyInstance
+                  Id="6ba80aab-3483-4242-b2c2-b0ddaea846ef"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ea063300-5d9b-4a8c-98be-166a82094fb9">
+                <propertyInstance
+                  Id="1ac4eb02-aa03-4bdc-bd51-d217b9b7171c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="10ab4ac7-beb1-4d66-93d0-7830f7f68fce">
+                <propertyInstance
+                  Id="29521d07-f984-46f1-8d1e-b286f1cf9777"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d51edb87-ddc4-4400-bf90-4e59374c4aee">
+                <propertyInstance
+                  Id="f64b94c9-4bd2-4035-8d29-293b96dba8c7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="792c0951-3707-4f5e-aefd-eb8cfd81a3cc">
+                <propertyInstance
+                  Id="7fb10908-ed71-48ee-b50f-87a71f58227b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="98f79d05-5c53-40ad-b6aa-9abbcb05c9b3"
+            name="tokenDataManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="567cb2d0-d5d1-4ad7-9539-e30066cdd538"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer Type%3DDataFacade Member%3DtokenDataManager"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8a2660e0-9693-4347-bb84-d9e1e164aca4"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b39d197-e854-4d82-b17f-b4d62284e04c">
+                    <propertyInstance
+                      Id="dac0ad60-c0e9-4be9-a7c0-edcd011b0548"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc74683b-64d7-40a6-88a0-0a2d2b478d74">
+                    <propertyInstance
+                      Id="8487dd4a-ca2c-4c18-9299-3b8a4407f090"
+                      name="Get"
+                      value="private" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28164425-996b-4c7c-a3dd-56afd3e44d61">
+                    <propertyInstance
+                      Id="8660ea84-208f-4d26-b7ca-f71b16419fc0"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d58556d-79f9-4c06-9b6d-37d85e497627">
+                    <propertyInstance
+                      Id="aaa558e4-03bb-47fe-8c8d-b5fa0cc005ff"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2b49c73-3f32-4e39-b656-095db49cc311">
+                    <propertyInstance
+                      Id="9f9528f5-a853-4864-a433-80d98576b851"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="544bb09b-33d9-4d94-aff7-93d160f5f6c8">
+                    <propertyInstance
+                      Id="7e8d2b83-eccc-4d70-94c0-e9251a02ba86"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="326e2f4e-9cdf-4cec-96ca-59b9b6e9f665">
+                    <propertyInstance
+                      Id="4f20edd2-ea50-4cca-abd2-465f117c99e6"
+                      name="Set"
+                      value="private" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ff998885-e6f8-4bed-92e1-7349d9af9c4e"
+                LastKnownName="TokenDataManagerBase"
+                LastKnownLocation="Package4_1029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5a47fd04-6288-47a8-965e-4c25833549fb"
+            name="TokenDataManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9a2e497d-46a6-44fa-bead-16b4d4518d6f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer Type%3DDataFacade Member%3DTokenDataManager"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="29f16290-84b7-4ad4-9eef-3722cb8004b7"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="780736f0-2eea-4794-a8bc-fc32db59367b">
+                    <propertyInstance
+                      Id="168d630e-8302-4a44-823f-9d80eb2bf929"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01a326fc-15d9-4d51-92ab-3c8367eae1fe">
+                    <propertyInstance
+                      Id="b7799a82-fd31-4db9-bea9-ca52cf55ed40"
+                      name="Get"
+                      value="private" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bcf6c22e-d5a4-4fcd-9efe-ffa69a9456d7">
+                    <propertyInstance
+                      Id="6264a5f4-886f-45de-bcdd-0ebfbd561537"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69e067d6-f316-4287-94ca-8008d3d47277">
+                    <propertyInstance
+                      Id="17ef63e7-78db-4ab3-beac-c90021b9929a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="694c56a5-4a2e-4c6a-ab5c-a06ac3223fb5">
+                    <propertyInstance
+                      Id="05c5f21c-786f-4d32-85c4-82901cffcb1d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f405b09-af67-4aa1-a590-a762f7e3fbec">
+                    <propertyInstance
+                      Id="b03dfcbf-bda4-4b18-a33d-b16f4dcea1f8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b5f0221-eb0d-48f8-bd14-74bec4906f58">
+                    <propertyInstance
+                      Id="e44c2858-79c6-4e4e-a34d-2b04bfe5d364"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ff998885-e6f8-4bed-92e1-7349d9af9c4e"
+                LastKnownName="TokenDataManagerBase"
+                LastKnownLocation="Package4_1029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f35de4a4-875f-4350-9d67-3e1f8a2872ba"
+            name="serviceLocator"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d3d26498-f5fa-4935-bdd0-103af9bdab6a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer Type%3DDataFacade Member%3DserviceLocator"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="47190462-d66d-4715-9e84-407abe0b5189"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec334e29-213b-42bf-9aea-6d3d7b8299f3">
+                    <propertyInstance
+                      Id="559cc408-fbad-41e3-86d3-4a3ce9542798"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b61facb-4caa-4bf2-86fa-d12a1ca46181">
+                    <propertyInstance
+                      Id="a41c79b3-b62f-445a-adf2-ce72578fefc0"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ef3824f-8bb9-48b4-bb4f-4245fa749bf3">
+                    <propertyInstance
+                      Id="841e98d9-82dc-4380-a875-9b78782e3c54"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85c6364c-716a-422d-b5ea-32aaecbdb2f5">
+                    <propertyInstance
+                      Id="1b83d511-298d-40b8-bbae-04949ea582b8"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22d92a40-2482-4292-b0c4-c67ae2d3dcc2">
+                    <propertyInstance
+                      Id="47238cb4-2bff-4bfd-be6a-53c415b26378"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="2c5ddf34-4adb-4b71-81c1-fe3ba2fc8c2a"
+                LastKnownName="ServiceLocatorBase"
+                LastKnownLocation="Package2_1029.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d141a2f5-88b8-4391-a613-e691d4512452"
+            name="DataFacade"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="44cae894-d89b-46c3-8aa6-49d58bfe1991"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer Type%3DDataFacade Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.ServiceLocator Type%3DServiceLocatorBase)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="474371d5-65e7-46b9-a884-bdfe8b7cff21"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bd4d956-a099-4225-8daf-1678ae7be2bf">
+                    <propertyInstance
+                      Id="d763b7f0-deab-4a0f-85a1-96dcdb468094"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2df8110-83e5-4887-8d17-dbe46fc3f68b">
+                    <propertyInstance
+                      Id="456106d9-2f43-418c-a69c-3a2def16c54e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48404033-41fe-4b34-95a4-f87afb6a379a">
+                    <propertyInstance
+                      Id="b4dc44da-4517-4a46-bc93-a471b25bbd3a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c5aef37-c427-41f6-9839-88411b10dbad">
+                    <propertyInstance
+                      Id="e6cf82bc-fb63-4be4-827a-88f688cac567"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98834e13-81fc-4381-a617-9573890ab663">
+                    <propertyInstance
+                      Id="c5d8e6bd-f544-4f77-994e-be3a9e3a9a34"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8be1c9ec-727a-4890-9db2-0aac0bd56931">
+                    <propertyInstance
+                      Id="ed109ec0-3f8d-4c92-919d-cbc591f77b82"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="700cf072-6d6d-4dff-a127-a7ec62217537"
+                  name="serviceLocator"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e9e0a56e-301b-4468-b433-f9e0b5a0724b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer Type%3DDataFacade Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.ServiceLocator Type%3DServiceLocatorBase)]) ParameterIdentifier%3DserviceLocator"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2c5ddf34-4adb-4b71-81c1-fe3ba2fc8c2a"
+                      LastKnownName="ServiceLocatorBase"
+                      LastKnownLocation="Package2_1029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="37c8f593-06d0-4772-8492-263dad64e4af"
+            name="CreateToken"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d60ecbe7-2f85-4dff-a125-311b9a39e66a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer Type%3DDataFacade Member%3D(Name%3DCreateToken OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.InternalDto Type%3DToken)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6855f84d-836a-4aa7-aa65-2860482ebae8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19e84dc3-d528-45d0-aaa2-6309dce9d443">
+                    <propertyInstance
+                      Id="207e392c-4d00-48ad-84dc-fce3e985afc8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e22e88c-a96a-4d0c-8a3a-932c3050a729">
+                    <propertyInstance
+                      Id="b4828843-9fba-45bc-90d1-ce2bda7712d8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9bd204f2-53e7-4856-a129-6742f993cc57">
+                    <propertyInstance
+                      Id="0e37a299-18b8-4315-805d-79927a01ef26"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaec11a4-5e45-472f-8c99-43e3eec0272b">
+                    <propertyInstance
+                      Id="bf184764-0e38-4a74-bbf7-80149aa04b23"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7a439ee-542d-4689-806a-54d9b9fd1262">
+                    <propertyInstance
+                      Id="1d757764-619f-449e-8a5c-e4941a4af42c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c9f6a67-d329-4d0f-8611-4da74110b5cd">
+                    <propertyInstance
+                      Id="df0229c5-9bf6-4c3c-842f-35dacc1b338c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f65f4a85-cbef-4e77-894a-392f131a9822"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="DemoDCProject.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="734458be-52bb-45d4-8ce8-f01d0c4e6e9f"
+                  name="token"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="de8a8771-77ce-4496-adf0-1de046eb84d2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer Type%3DDataFacade Member%3D(Name%3DCreateToken OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.InternalDto Type%3DToken)]) ParameterIdentifier%3Dtoken"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0f6cc3aa-6ffe-42ff-bcba-fc41a1970dff"
+                      LastKnownName="Token"
+                      LastKnownLocation="Package3_1029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e862e096-39e8-4c56-b9f1-db4ef885aedc"
+            name="DeleteTokenWithTokenNumber"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f42fd593-86dd-4eaf-b850-b04fd5a0459f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer Type%3DDataFacade Member%3D(Name%3DDeleteTokenWithTokenNumber OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a7c70c46-4a1d-45a4-8f67-c9e957fda6a8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="901c47be-b7c0-4164-975a-853d6e682283">
+                    <propertyInstance
+                      Id="a2557391-2516-44c7-b6d2-9f6e908766e4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af84d95e-629f-4da8-bb5d-5d2ab68f3e6a">
+                    <propertyInstance
+                      Id="3dfa98f8-4da9-4cff-91a5-b97e08590d9a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d07130b-2f60-4cde-b274-eaddd0428812">
+                    <propertyInstance
+                      Id="e50c63a5-57d2-448d-8ea8-0d755cc6b948"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7fb45976-c732-48f7-b95c-0cbf386d92c0">
+                    <propertyInstance
+                      Id="2bba14cc-4e1e-4c39-a3c1-e9b0ce6d896c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7760425e-f3da-424f-b9f3-429110deb873">
+                    <propertyInstance
+                      Id="13cb942e-2bb5-4b33-8e05-4ffd88210c42"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d43d7d8b-1b6b-4d1a-8f83-7bc6795f3ae5">
+                    <propertyInstance
+                      Id="956b3f8f-4d80-4665-991f-9990a2139d5f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9d48970d-a4ad-4a69-a094-8e5299b3c9d4"
+                  name="tokenNumber"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e2163b40-d92b-4802-9ff9-0c54ce902e30"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FSteven%2FDocuments%2FGitHub%2FDemoDCProject%2FDemoDCProject.DomainLayer%2Fbin%2FDebug%2FDemoDCProject.DomainLayer.dll Namespace%3DDemoDCProject.DomainLayer.Managers.DataLayer Type%3DDataFacade Member%3D(Name%3DDeleteTokenWithTokenNumber OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DtokenNumber"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="DemoDCProject.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7f90f3c9-95ae-470d-b910-2462a7059bf5"
+        LastKnownName="DataManagers"
+        LastKnownLocation="Package4_1029.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c905e43d-baee-4755-a0f6-2de55220c42a"
+        LastKnownName="Extensions"
+        LastKnownLocation="Package3_1030.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

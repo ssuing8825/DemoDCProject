@@ -25,5 +25,9 @@ namespace DemoDCProject.DomainLayer.Managers.DataLayer
         {
             return TokenDataManager.CreateToken( token);
         }
+        public void DeleteTokenWithTokenNumber(string tokenNumber)
+        {
+             TokenDataManager.DeleteTokenWithTokenNumber(tokenNumber);
+        }
     }
 }

@@ -7,3 +7,5 @@ C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\bin\
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\obj\Debug\DemoDCProject.Testing.Shared.csprojResolveAssemblyReference.cache
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\obj\Debug\DemoDCProject.Testing.Shared.dll
 C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\obj\Debug\DemoDCProject.Testing.Shared.pdb
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\bin\Debug\log4net.dll
+C:\Users\Steven\Documents\GitHub\DemoDCProject\DemoDCProject.Testing.Shared\bin\Debug\log4net.xml

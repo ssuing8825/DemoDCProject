@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DemoDCProject.DomainLayer.Managers.InternalDto
 {
     [ExcludeFromCodeCoverage]
-    public sealed class Token
+    internal sealed class Token
     {
         private readonly int id;
         public int Id { get { return id; } }

@@ -22,6 +22,58 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="DataAccess.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DataAccess.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DataAccess.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0917.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1029.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1030.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0917.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1029.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1030.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_0917.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_1029.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_1030.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_0917.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_1029.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_0917.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0917.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1029.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1030.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="AccountSearchController_Get.sequencediagram">
       <SubType>Content</SubType>
@@ -29,6 +81,13 @@
     <Content Include="AccountSearchController_Get.sequencediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>AccountSearchController_Get.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Exceptions.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Exceptions.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Exceptions.classdiagram</DependentUpon>
     </Content>
     <Content Include="MakePaymentUseCase.usecasediagram">
       <SubType>Content</SubType>
@@ -53,5 +112,11 @@
       <SubType>Content</SubType>
       <DependentUpon>MakePayment.layerdiagram</DependentUpon>
     </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DemoDCProject.DomainLayer\DemoDCProject.DomainLayer.csproj">
+      <Name>DemoDCProject.DomainLayer</Name>
+      <Project>{1c40913f-fc1d-459d-9749-ab74b8932ca5}</Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DemoDCProject.DomainLayer.Gateways.Payment;
+using DemoDCProject.DomainLayer.Exceptions;
 
 namespace DemoDCProject.IntegrationTests
 {
@@ -9,7 +10,8 @@ namespace DemoDCProject.IntegrationTests
     {
         const string CREDITCARD = "4111111111111111";
         const string FULLNAME = "Steve Suing";
-        const string EXPDATE = "1018";
+        const int EXPMONTH = 10;
+        const int EXPYEAR = 18;
 
 
         [ClassInitialize]
@@ -31,18 +33,29 @@ namespace DemoDCProject.IntegrationTests
         {
             // Arrange
             // Nothing to arrange here. We might set up an account or prep the database
+            string token = string.Empty;
+            try
+            {
+                // Act
+                token = domainFacadeUnderTest.StoreCreditCardInformation(1, CREDITCARD, EXPMONTH, EXPYEAR);
 
-            // Act
-            var token = domainFacadeUnderTest.StoreCreditCardInformation(1, CREDITCARD, EXPDATE);
+                // Assert
+                Assert.AreEqual(1, testMediator.StoreCreditCardVerificationNumberCountOfCreditCardsSent);
 
-            // Assert
-            Assert.AreEqual(1, testMediator.StoreCreditCardVerificationNumberCountOfCreditCardsSent);
+                // Should be able to Get this tokenNumber out of the 
+                //     var tokenNumber = domainFacadeUnderTest.StoreCreditCardInformation(CREDITCARD, EXPDATE);
 
-            // Should be able to Get this tokenNumber out of the 
-            //     var tokenNumber = domainFacadeUnderTest.StoreCreditCardInformation(CREDITCARD, EXPDATE);
-
-            // Should be able to verify token is stored in DuckCreek. 
-            //     var tokenNumber = domainFacadeUnderTest.StoreCreditCardInformation(CREDITCARD, EXPDATE);
+                // Should be able to verify token is stored in DuckCreek. 
+                //     var tokenNumber = domainFacadeUnderTest.StoreCreditCardInformation(CREDITCARD, EXPDATE);
+          
+            }
+            finally
+            {
+                  //cleanup
+                domainFacadeUnderTest.DeleteTokenWithTokenNumber(token);
+            }
+  
+    
 
         }
 
@@ -52,7 +65,7 @@ namespace DemoDCProject.IntegrationTests
         public void DomainFacade_StoreCreditCard_WithBlankCreditCard_ShouldThrow()
         {
             // Act
-            var token = domainFacadeUnderTest.StoreCreditCardInformation(1, string.Empty, EXPDATE);
+            var token = domainFacadeUnderTest.StoreCreditCardInformation(1, string.Empty, EXPMONTH, EXPYEAR);
         }
 
         [TestMethod]
@@ -61,16 +74,16 @@ namespace DemoDCProject.IntegrationTests
         public void DomainFacade_StoreCreditCard_WithNullCreditCard_ShouldThrow()
         {
             // Act
-            var token = domainFacadeUnderTest.StoreCreditCardInformation(1, null, EXPDATE);
+            var token = domainFacadeUnderTest.StoreCreditCardInformation(1, null, EXPMONTH, EXPYEAR);
         }
 
         [TestMethod]
         [TestCategory("End-to-End Integration Test")]
-        [ExpectedException(typeof(InvalidTokenInfomationException))]
-        public void DomainFacade_StoreCreditCard_WithNullExpDate_ShouldThrow()
+        [ExpectedException(typeof(CreditCardPaymentInformationException))]
+        public void DomainFacade_StoreCreditCard_WithZeroExpDate_ShouldThrow()
         {
             // Act
-            var token = domainFacadeUnderTest.StoreCreditCardInformation(1, CREDITCARD, null);
+            var token = domainFacadeUnderTest.StoreCreditCardInformation(1, CREDITCARD, 0, 0);
         }
 
     }

@@ -18,8 +18,19 @@ namespace DemoDCProject.DomainLayer.Managers.DataLayer.DataManagers.CommandFacto
             dbCommand.CommandText = "CreateToken";
             dbCommand.CommandType = CommandType.StoredProcedure;
             dbCommand.AddReturnParameter();
+            dbCommand.AddParameter(DbType.Int32, "@BillingAccountId", 0);
             dbCommand.AddParameter(DbType.String, "@Pec", token.Pec, 50);
             dbCommand.AddParameter(DbType.String, "@TokenNumber", token.TokenNumber, 50);
+            return dbCommand;
+        }
+
+        public static DbCommand CreateCommandForDeleteTokenWithTokenNumber(DbConnection dbConnection, string tokenNumber)
+        {
+            var dbCommand = dbConnection.CreateCommand();
+            dbCommand.CommandText = "DeleteTokenWithTokenNumber";
+            dbCommand.CommandType = CommandType.StoredProcedure;
+            dbCommand.AddReturnParameter();
+            dbCommand.AddParameter(DbType.String, "@TokenNumber", tokenNumber, 50);
             return dbCommand;
         }
     }
